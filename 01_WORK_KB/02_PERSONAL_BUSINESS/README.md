@@ -1,31 +1,39 @@
 ---
 kb_id: WK-BIZ-GF-001
-title: Personal Business Knowledge Base
+title: "องค์ความรู้ธุรกิจส่วนตัว (Personal Business Knowledge Base)"
+description: "รวบรวมแนวคิด ผลิตภัณฑ์ การดำเนินงาน และแผนพัฒนาธุรกิจส่วนตัว โดยเริ่มจากธุรกิจ Get Fruit"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
+status: draft
 domain: personal_business
 knowledge_type: fact
-status: active_draft
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: general_personal
-owner: Wanmaka Promchoto
 ---
 
-# Personal Business Knowledge Base
+# องค์ความรู้ธุรกิจส่วนตัว (Personal Business Knowledge Base)
 
-## Domain Boundary
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | แนวคิด ผลิตภัณฑ์ การดำเนินงาน และแผนพัฒนาธุรกิจ Get Fruit |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ร่าง (Draft) |
 
-Personal Business knowledge MUST remain separate from One Bangkok/SOC Work KB.
+## ขอบเขต Domain (Domain Boundary)
+
+องค์ความรู้ธุรกิจส่วนตัวต้องแยกจาก One Bangkok/SOC Work KB
 
 ## Get Fruit
 
-Current working business name: `Get Fruit`
+ชื่อธุรกิจที่อยู่ระหว่างพัฒนา: `Get Fruit`
 
-Business concept:
+แนวคิดธุรกิจ:
 
-- Fresh and ready-to-eat fruit shop
-- Operates through delivery platforms or applications
+- ร้านผลไม้สดและผลไม้พร้อมรับประทาน
+- จำหน่ายผ่าน Delivery Platform หรือ Application
 
-Previously identified products:
+รายการผลไม้ที่เคยกำหนด:
 
 - ส้มไต้หวัน
 - แอปเปิ้ลแจ๊ส
@@ -40,7 +48,7 @@ Previously identified products:
 - องุ่นลิ้นจี่
 - องุ่นไซมัสคัส
 
-## Future Knowledge Modules
+## Module ที่ต้องพัฒนาต่อ
 
 - Business Model
 - Product Master
@@ -54,8 +62,9 @@ Previously identified products:
 - Finance and Performance
 - Business Decision Log
 
-## AI Constraints
+## ข้อจำกัดของ AI (AI Constraints)
 
-- AI MUST NOT mix Get Fruit data with One Bangkok/SOC records.
-- Time-sensitive prices, costs, suppliers and platform rules MUST be dated and verified before use.
+- ห้ามผสมข้อมูล Get Fruit กับ One Bangkok/SOC
+- ราคา ต้นทุน Supplier และกฎของ Platform ที่อ่อนไหวต่อเวลาต้องระบุวันที่และตรวจสอบก่อนใช้
+- ห้ามถือรายการสินค้าเดิมว่าเป็น Final Product Master จนกว่า Boss จะยืนยัน
 

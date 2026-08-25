@@ -1,61 +1,69 @@
 ---
 kb_id: BP-CTX-001
-title: Personal Context and Usage Governance
+title: "บริบทส่วนบุคคลและกฎการใช้งาน (Personal Context and Usage Governance)"
+description: "รวบรวมข้อมูลส่วนบุคคล สุขภาพ ประกัน และบริบทธุรกิจ พร้อมกำหนดข้อจำกัดไม่ให้นำข้อมูลละเอียดอ่อนไปใช้ผิดบริบท"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
+status: active
 domain: boss_profile
 knowledge_type: personal_context
-status: approved
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: sensitive_personal
-owner: Wanmaka Promchoto
 ---
 
-# Personal Context and Usage Governance
+# บริบทส่วนบุคคลและกฎการใช้งาน (Personal Context and Usage Governance)
 
-## Usage Rule
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | ข้อมูลส่วนบุคคล สุขภาพ ประกัน และบริบทธุรกิจ พร้อมข้อจำกัดการใช้งาน |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
-- General Personal Context MAY be used automatically to personalize responses.
-- Sensitive Personal Context MUST be used only when directly relevant or when Boss explicitly asks.
-- Sensitive Personal Context MUST NOT be inserted into work documents, emails, reports or presentations.
+## กฎการใช้งาน (Usage Rule)
 
-## Personal Profile
+- General Personal Context สามารถใช้ปรับคำตอบให้เหมาะกับ Boss ได้ตามปกติ
+- Sensitive Personal Context ใช้เฉพาะเมื่อเกี่ยวข้องโดยตรงหรือ Boss เป็นผู้ถาม
+- ห้ามนำ Sensitive Personal Context ไปใส่ในเอกสารงาน อีเมล รายงาน หรือ Presentation
 
-- Date of birth: 1998-02-11
-- Day of birth: Wednesday
-- Dreams used for personal dream interpretation generally occur at night.
+## ข้อมูลส่วนบุคคล (Personal Profile)
 
-## Insurance Context
+- วันเกิด: 11 กุมภาพันธ์ 1998
+- วันเกิดตามสัปดาห์: วันพุธ
+- ความฝันที่ใช้เพื่อการทำนายส่วนบุคคลมักเกิดในเวลากลางคืน
 
-Provider: Chubb Samaggi Insurance PCL
+## ข้อมูลประกันภัย (Insurance Context)
 
-- Policy number: KP2TH00274242
+บริษัทผู้รับประกัน: Chubb Samaggi Insurance PCL
+
+- Policy Number: KP2TH00274242
 - Plan: Plan 2
-- Coverage start: June 2025
-- Renewal: Annual
-- Monthly premium: 515 THB
-- Beneficiary: Ms. Phenphatsa Promchoto, sister
+- เริ่มความคุ้มครอง: มิถุนายน 2025
+- การต่ออายุ: รายปี
+- เบี้ยประกัน: 515 บาทต่อเดือน
+- ผู้รับผลประโยชน์: Ms. Phenphatsa Promchoto ซึ่งเป็นพี่สาวหรือน้องสาวของผู้เอาประกัน
 
-Known key benefits:
+ผลประโยชน์หลักที่ทราบ:
 
-- Accidental death, dismemberment, loss of sight or total permanent disability: 300,000 THB
-- Motorcycle riding or boarding accident coverage: 70,000 THB
-- Murder or assault coverage: 70,000 THB
-- Accident medical expenses: 30,000 THB
-- Monthly family income compensation: 3,000 THB per month, maximum 3 months
-- Accident-related funeral expenses: 20,000 THB
+- เสียชีวิต สูญเสียอวัยวะ สูญเสียการมองเห็น หรือทุพพลภาพถาวรสิ้นเชิงจากอุบัติเหตุ: 300,000 บาท
+- อุบัติเหตุจากการขับขี่หรือโดยสารรถจักรยานยนต์: 70,000 บาท
+- การฆาตกรรมหรือทำร้ายร่างกาย: 70,000 บาท
+- ค่ารักษาพยาบาลจากอุบัติเหตุ: 30,000 บาท
+- เงินชดเชยรายได้ครอบครัว: เดือนละ 3,000 บาท สูงสุด 3 เดือน
+- ค่าใช้จ่ายงานศพจากอุบัติเหตุ: 20,000 บาท
 
-Known exclusions include war, terrorism, nuclear events, suicide, self-harm, HIV/AIDS, pregnancy or childbirth, infertility treatment and specified alternative medicine.
+ข้อยกเว้นที่ทราบประกอบด้วยสงคราม การก่อการร้าย เหตุการณ์นิวเคลียร์ การฆ่าตัวตาย การทำร้ายตนเอง HIV/AIDS การตั้งครรภ์หรือคลอดบุตร การรักษาภาวะมีบุตรยาก และการแพทย์ทางเลือกบางประเภท
 
-## Personal Business Context
+## บริบทธุรกิจส่วนตัว (Personal Business Context)
 
-Boss is developing the Get Fruit delivery-based fresh and ready-to-eat fruit business.
+Boss กำลังพัฒนาธุรกิจ Get Fruit สำหรับจำหน่ายผลไม้สดและผลไม้พร้อมรับประทานผ่าน Delivery Platform
 
-Canonical business operations belong in `01_WORK_KB/02_PERSONAL_BUSINESS/`.
+ข้อมูลการดำเนินธุรกิจหลักต้องเก็บที่ `01_WORK_KB/02_PERSONAL_BUSINESS/`
 
-## AI Constraints
+## ข้อจำกัดของ AI (AI Constraints)
 
-- AI MUST NOT expose this information in unrelated work outputs.
-- AI MUST verify current policy dates, coverage and eligibility from authoritative policy documents before giving high-stakes insurance guidance.
-- AI MUST NOT infer medical status from insurance information.
-- AI MUST NOT expose passwords, credentials or authentication data in this repository.
+- ห้ามเปิดเผยข้อมูลนี้ใน Work Output ที่ไม่เกี่ยวข้อง
+- ต้องตรวจวันที่ ความคุ้มครอง และ Eligibility จากเอกสารกรมธรรม์ที่เป็น Authority ก่อนให้คำแนะนำประกันที่มีผลสำคัญ
+- ห้ามสรุปสถานะสุขภาพจากข้อมูลประกัน
+- ห้ามจัดเก็บ Password, Credential หรือข้อมูล Authentication ใน Repository
 

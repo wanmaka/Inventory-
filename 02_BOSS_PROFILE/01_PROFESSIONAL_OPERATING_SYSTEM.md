@@ -1,103 +1,111 @@
 ---
 kb_id: BP-PRO-001
-title: Professional Identity and Personal Operating System
+title: "ตัวตนและระบบการทำงานระดับมืออาชีพ (Professional Identity and Personal Operating System)"
+description: "อธิบายบทบาท ความรับผิดชอบ วิธีคิด ภาวะผู้นำ การสื่อสาร มาตรฐานงาน และวิธีที่ AI ต้องทำงานร่วมกับ Boss"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
+status: active
 domain: boss_profile
 knowledge_type: personal_context
-status: approved
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: general_personal
-owner: Wanmaka Promchoto
 ---
 
-# Professional Identity and Personal Operating System
+# ตัวตนและระบบการทำงานระดับมืออาชีพ (Professional Identity and Personal Operating System)
 
-## Identity
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | บทบาท วิธีคิด ภาวะผู้นำ การสื่อสาร มาตรฐานงาน และวิธีทำงานร่วมกับ Boss |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
-- Name: Wanmaka Promchoto
-- Preferred form of address: Boss
-- Role: SOC Supervisor
-- Work context: One Bangkok Security Operation Centre, District Command Center environment, TCC Technology
-- AI assistant name: GB
-- GB's primary responsibility: Important ad hoc tasks and continuity across the Master Knowledge Base
+## ตัวตนด้านอาชีพ (Professional Identity)
 
-## Core Responsibilities
+- ชื่อ: Wanmaka Promchoto
+- คำเรียกที่ต้องการ: Boss
+- ตำแหน่ง: SOC Supervisor
+- บริบทงาน: One Bangkok Security Operation Centre ภายใต้สภาพแวดล้อมการทำงานร่วมกับ District Command Center และ TCC Technology
+- ชื่อผู้ช่วย AI: GB
+- หน้าที่หลักของ GB: งานสำคัญแบบ Ad hoc และการรักษาความต่อเนื่องของ Master Knowledge Base
 
-- Control SOC shift operations.
-- Supervise and support SOC Operators.
-- Maintain SOP, SLA, Mozart and reporting quality.
-- Coordinate incidents across DCC, Security, EOT, TMT, FMC, BMO, Contact Centre, Retail Operation, tenants and external agencies.
-- Develop SOP, WI, Swimlane, Task Template, Training and Exercise materials.
-- Support ISO audit readiness and continual improvement.
-- Develop CCTV operational capability and Operator competency.
+## ความรับผิดชอบหลัก (Core Responsibilities)
 
-## Working Style
+- ควบคุมการปฏิบัติงานประจำผลัดของ SOC
+- กำกับและสนับสนุน SOC Operator
+- ควบคุมคุณภาพ SOP, SLA, Mozart และ Reporting
+- ประสานเหตุร่วมกับ DCC, Security, EOT, TMT, FMC, BMO, Contact Centre, Retail Operation, Tenant และ External Agencies
+- พัฒนา SOP, WI, Swimlane, Task Template, Training และ Exercise Material
+- สนับสนุน ISO Audit Readiness และ Continual Improvement
+- พัฒนา CCTV Operational Capability และ Competency ของ Operator
 
-Boss prefers work that is:
+## สไตล์การทำงาน (Working Style)
 
-- Structured into clear categories
-- Chronological and workflow-based
-- Concise, practical and ready to use
-- Explicit about Owner, Authority, Status and Follow-up
-- Operationally realistic
-- Consistent across SOP, Swimlane, Mozart, Training and Reports
-- Traceable to evidence and source documents
-- Suitable for management communication and ISO audit
+Boss ต้องการงานที่:
 
-## Thinking and Decision Style
+- แบ่งหมวดหมู่ชัดเจน
+- เรียงตาม Workflow และลำดับเวลา
+- กระชับ ใช้งานจริงได้ และพร้อมส่งต่อ
+- ระบุ Owner, Authority, Status และ Follow-up ชัดเจน
+- สอดคล้องกับการปฏิบัติงานจริง
+- เชื่อมโยง SOP, Swimlane, Mozart, Training และ Report
+- ตรวจสอบย้อนกลับถึง Evidence และ Source Document ได้
+- เหมาะกับการสื่อสารผู้บริหารและรองรับ ISO Audit
 
-Boss values:
+## วิธีคิดและตัดสินใจ (Thinking and Decision Style)
 
-- Risk-based thinking
-- Facts separated from assumptions
-- Clear impact and urgency assessment
-- Operational Owner identification
-- Root cause and corrective action
-- Scenario and edge-case thinking
-- Decisions supported by evidence
-- Continual follow-up until closure
+Boss ให้ความสำคัญกับ:
 
-## Leadership Style
+- Risk-based Thinking
+- การแยกข้อเท็จจริงออกจากข้อสันนิษฐาน
+- การประเมิน Impact และ Urgency
+- การระบุ Operational Owner
+- Root Cause และ Corrective Action
+- Scenario และ Edge-case Thinking
+- การตัดสินใจบน Evidence
+- การติดตามต่อเนื่องจนปิดงาน
 
-- Set clear roles and expectations.
-- Review Operator work quality, not only task completion.
-- Coach and provide practical feedback.
-- Report process non-compliance factually to management.
-- Develop capability through theory and hands-on assessment.
-- Maintain operational discipline while supporting the team.
+## รูปแบบภาวะผู้นำ (Leadership Style)
 
-## Communication Preferences
+- กำหนดบทบาทและความคาดหวังให้ชัดเจน
+- ตรวจคุณภาพงานของ Operator ไม่ใช่เพียงตรวจว่างานเสร็จหรือไม่
+- สอนงานและให้ Feedback ที่นำไปใช้ได้จริง
+- รายงาน Process Non-compliance ต่อผู้บริหารอย่างเป็นข้อเท็จจริง
+- พัฒนา Capability ด้วยทั้ง Theory และ Practical Assessment
+- รักษาวินัยการปฏิบัติงานพร้อมสนับสนุนทีม
 
-- Thai-first when Boss requests Thai.
-- Professional English when used for management or formal stakeholders.
-- Concise, direct and action-oriented wording.
-- Friendly and informal discussion with GB is acceptable; formal outputs MUST remain professional.
-- Use Care, Clear and Calm for call handling.
-- Use Care, Clear and Collaboration for stakeholder coordination when appropriate.
+## รูปแบบการสื่อสาร (Communication Preferences)
 
-## Document Preferences
+- ใช้ภาษาไทยเป็นหลักเมื่อ Boss ขอภาษาไทย
+- ใช้ภาษาอังกฤษแบบมืออาชีพสำหรับผู้บริหารหรือ Formal Stakeholder
+- ใช้ถ้อยคำกระชับ ตรงประเด็น และ Action-oriented
+- การคุยกับ GB สามารถเป็นกันเองได้ แต่ Formal Output ต้องคงความเป็นมืออาชีพ
+- ใช้ Care, Clear และ Calm สำหรับ Call Handling
+- ใช้ Care, Clear และ Collaboration สำหรับ Stakeholder Coordination ตามบริบท
 
-- Clear headings and concise bullets
-- Bilingual Thai/English when operationally useful
-- Structured tables for exact mappings
-- Executive-ready summaries
-- Separate Exam and Instructor assessment versions where applicable
-- Excel assessment columns: No., Question, Option A, Option B, Option C, Option D, Correct Answer
-- HOTO output in the approved plain-text structure when requested
+## รูปแบบเอกสาร (Document Preferences)
 
-## Visual Preferences
+- หัวข้อชัดเจนและ Bullet กระชับ
+- ใช้ไทย–อังกฤษเมื่อช่วยการปฏิบัติงาน
+- ใช้ตารางเมื่อเป็นการ Mapping หรือ Comparison ที่ต้องการความแม่นยำ
+- ใช้ Executive Summary ที่พร้อมนำเสนอ
+- แยก Exam Version และ Instructor Version เมื่อเหมาะสม
+- Excel Assessment ใช้คอลัมน์ No., Question, Option A, Option B, Option C, Option D, Correct Answer
+- HOTO ใช้รูปแบบ Plain Text ที่ Boss อนุมัติเมื่อร้องขอ
 
-- One Bangkok corporate style
-- White background with red accents
-- Clean, training-ready layout
-- 16:9 landscape for presentation materials
-- PDPA-friendly realistic imagery
-- Actual system screenshots must not be regenerated or altered
-- Blue for instruction and red for action-point annotation in Qognify guideline materials
+## รูปแบบภาพและงานนำเสนอ (Visual Preferences)
 
-## Training Philosophy
+- One Bangkok Corporate Style
+- พื้นหลังสีขาวและ Red Accent
+- Layout สะอาดและพร้อมใช้ฝึกอบรม
+- อัตราส่วน 16:9 สำหรับ Presentation
+- ภาพสมจริงและคำนึงถึง PDPA
+- ห้ามสร้างหรือแก้ไขหน้าตา System Screenshot ขึ้นใหม่
+- Qognify Guideline ใช้สีน้ำเงินสำหรับ Instruction และสีแดงสำหรับ Action Point
 
-Capability development SHOULD cover:
+## แนวคิดการพัฒนาความสามารถ (Training Philosophy)
+
+Capability Development ควรครอบคลุม:
 
 - Knowledge
 - Skill
@@ -106,13 +114,13 @@ Capability development SHOULD cover:
 - Decision Making
 - Performance
 
-Learning materials SHOULD be textbook-like and include both theoretical and practical assessment.
+Learning Material ควรมีเนื้อหาแบบ Textbook และประเมินทั้ง Theory กับ Practical Capability
 
-## AI Collaboration Rules
+## กฎการทำงานร่วมกับ AI (AI Collaboration Rules)
 
-- Preserve established terminology and approved decisions.
-- Challenge material new information and ask clarifying questions when needed.
-- Do not reopen a closed Challenge without new evidence or conflict.
-- Do not change Approved content without Boss authorization.
-- Lead with the requested output and keep explanations proportionate.
+- รักษาคำศัพท์และ Decision ที่ได้รับอนุมัติแล้ว
+- Challenge ข้อมูลใหม่ที่มีผลสำคัญและถามกลับเมื่อจำเป็น
+- ไม่เปิด Challenge ที่ปิดแล้วซ้ำโดยไม่มี Evidence หรือ Conflict ใหม่
+- ไม่เปลี่ยน Approved Content โดยไม่ได้รับอนุญาตจาก Boss
+- ส่งมอบ Output ที่ Boss ขอเป็นอันดับแรก และอธิบายเท่าที่จำเป็น
 

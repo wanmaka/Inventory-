@@ -1,20 +1,28 @@
 ---
 kb_id: WK-INDEX-001
-title: Work Knowledge Base Index
-domain: shared_governance
-knowledge_type: fact
+title: "สารบัญองค์ความรู้ด้านงาน (Work Knowledge Base Index)"
+description: "สารบัญกลางขององค์ความรู้ด้าน One Bangkok/SOC และธุรกิจส่วนตัว โดยควบคุมการแยก Domain อย่างชัดเจน"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
 status: active
-effective_date: 2026-08-25
+domain: shared_governance
+knowledge_type: index
+source_authority: boss_confirmed
 sensitivity: internal
 ---
 
-# Work Knowledge Base
+# สารบัญองค์ความรู้ด้านงาน (Work Knowledge Base Index)
 
-Work KB เก็บองค์ความรู้เกี่ยวกับงาน กระบวนการ ระบบ เอกสาร และการดำเนินธุรกิจ โดยแยก Domain ออกจากกัน
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | สารบัญกลางขององค์ความรู้ด้าน One Bangkok/SOC และธุรกิจส่วนตัว |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## Domain A — One Bangkok / SOC
 
-เนื้อหาครอบคลุม:
+ขอบเขตองค์ความรู้ประกอบด้วย:
 
 1. KB Governance and Master Index
 2. One Bangkok and SOC Context
@@ -36,17 +44,17 @@ Work KB เก็บองค์ความรู้เกี่ยวกับ
 18. AI Operational Analysis Rules
 19. Historical Records and Archive
 
-อ่านข้อมูลตั้งต้นที่ [01_ONE_BANGKOK_SOC](01_ONE_BANGKOK_SOC/)
+อ่านข้อมูลตั้งต้นที่ [One Bangkok / SOC Work KB](01_ONE_BANGKOK_SOC/)
 
-## Domain B — Personal Business
+## Domain B — ธุรกิจส่วนตัว (Personal Business)
 
-Personal Business MUST remain separate from One Bangkok/SOC.
+องค์ความรู้ธุรกิจส่วนตัวต้องแยกจาก One Bangkok/SOC
 
-ข้อมูลธุรกิจ เช่น Get Fruit ให้เก็บที่ [02_PERSONAL_BUSINESS](02_PERSONAL_BUSINESS/)
+อ่านข้อมูลที่ [Personal Business KB](02_PERSONAL_BUSINESS/)
 
-## Separation Rule
+## กฎการแยก Domain (Domain Separation Rule)
 
-- One Bangkok/SOC facts, procedures and projects MUST NOT be mixed with Personal Business records.
-- Boss's personal decision style MAY be referenced from Boss Profile but MUST NOT be rewritten as an organizational rule.
-- If a personal preference becomes an Approved organizational standard, the canonical rule belongs in One Bangkok/SOC Work KB and the decision history belongs in Boss Profile or Decision Log.
+- ห้ามผสมข้อเท็จจริง กระบวนการ และโครงการของ One Bangkok/SOC กับ Personal Business
+- วิธีคิดส่วนตัวของ Boss สามารถอ้างอิงจาก Boss Profile ได้ แต่ห้ามเขียนเป็นกฎองค์กรโดยอัตโนมัติ
+- หากความชอบของ Boss ได้รับอนุมัติเป็นมาตรฐานองค์กร ให้เก็บกฎหลักใน One Bangkok/SOC Work KB และเก็บประวัติการตัดสินใจใน Decision Log
 

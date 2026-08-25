@@ -1,23 +1,31 @@
 ---
 kb_id: WK-OBK-MOZ-001
-title: Mozart Case Management Core Rules
+title: "กฎหลักการบริหาร Mozart Case (Mozart Case Management Core Rules)"
+description: "กำหนดคำศัพท์ วงจร Normal และ Urgent Case บทบาท Operator/Supervisor และข้อจำกัดการใช้ข้อมูล Mozart"
+owner: "SOC"
+last_updated: 2026-08-25
+status: pending_validation
 domain: one_bangkok_soc
 knowledge_type: workflow
-status: active_draft
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
-owner: SOC
 related_kb_ids:
   - WK-OBK-SOC-001
   - WK-OBK-CMD-001
 ---
 
-# Mozart Case Management Core Rules
+# กฎหลักการบริหาร Mozart Case (Mozart Case Management Core Rules)
 
-## Canonical Terminology
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | คำศัพท์ วงจร Normal/Urgent Case และบทบาทควบคุมคุณภาพ Mozart |
+| เจ้าของข้อมูล (Owner) | SOC |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | รอตรวจสอบ (Pending Validation) |
 
-Use:
+## คำศัพท์หลัก (Canonical Terminology)
+
+ให้ใช้คำต่อไปนี้:
 
 - `Case`
 - `Case No.`
@@ -26,67 +34,71 @@ Use:
 - `Findings / Resolution`
 - `Resolve Case`
 
-Mozart is a Case Management system. Do not replace `Case` with `Incident` when referring to the Mozart record.
+Mozart เป็น Case Management System เมื่อกล่าวถึง Record ใน Mozart ห้ามแทนคำว่า `Case` ด้วย `Incident`
 
-## Normal Flow
+## วงจรปกติ (Normal Flow)
 
-`Receive → Verify → Assess → Open Case → Coordinate → Follow Up → Document → Resolve Case`
+`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิด Case → ประสานงาน → ติดตาม → บันทึก → Resolve Case`
 
-## Urgent Flow
+## วงจรเร่งด่วน (Urgent Flow)
 
-`Receive → Open Case as Pending Verification → Notify/Dispatch → Verify → Assess/Classify → Coordinate → Follow Up → Document → Resolve Case`
+`รับข้อมูล → เปิด Case เป็น Pending Verification → แจ้งหรือ Dispatch → ตรวจสอบ → ประเมินและจัดประเภท → ประสานงาน → ติดตาม → บันทึก → Resolve Case`
 
-## Urgent Case Criteria
+## เกณฑ์ Urgent Case
 
-Urgent handling applies to:
+ให้ใช้ Urgent Handling กับ:
 
 - CAT 1
 - CAT 2
-- Events with unknown CAT that may involve Life Safety
+- เหตุที่ยังไม่ทราบ CAT แต่เกี่ยวข้องกับ Life Safety
 - Active Threat
-- Maximum Security areas or events
-- Events affecting multiple zones
+- พื้นที่หรือเหตุ Maximum Security
+- เหตุที่กระทบหลาย Zone
 
-Urgency is a response-handling condition and MUST NOT be treated as a replacement for CAT classification.
+Urgency เป็นเงื่อนไขการตอบสนอง ห้ามใช้แทน CAT Classification
 
-## Operator Requirements
+## หน้าที่ Operator
 
-Operator SHOULD:
+Operator ควร:
 
-- Select the correct Event Type.
-- Record accurate time and location.
-- Keep the Timeline chronological and factual.
-- Identify responding and accountable parties.
-- Follow up until findings, actions and resolution are known.
-- Attach relevant evidence.
-- Escalate according to authority and impact.
+- เลือก Event Type ให้ถูกต้อง
+- บันทึกเวลาและสถานที่อย่างแม่นยำ
+- บันทึก Timeline ตามลำดับเวลาและข้อเท็จจริง
+- ระบุผู้ตอบสนองและผู้รับผิดชอบ
+- ติดตามจนทราบ Findings การดำเนินการ และผลยุติ
+- แนบหลักฐานที่เกี่ยวข้อง
+- ยกระดับตามอำนาจและผลกระทบ
 
-## Supervisor Requirements
+## หน้าที่ Supervisor
 
-Supervisor SHOULD verify:
+Supervisor ควรตรวจ:
 
-- Event Type and CAT accuracy
-- Timeline completeness
-- Evidence relevance
-- Correct stakeholder coordination
-- Escalation status
-- Active Case and SLA risk
-- Findings / Resolution quality
-- Handover completeness
+- ความถูกต้องของ Event Type และ CAT
+- ความครบถ้วนของ Timeline
+- ความเหมาะสมของ Evidence
+- การประสานหน่วยงานที่ถูกต้อง
+- สถานะการยกระดับ
+- Active Case และความเสี่ยงด้าน SLA
+- คุณภาพ Findings / Resolution
+- ความครบถ้วนของ Handover
 
-## Security and Maintenance Cases
+## Security Case และ Maintenance Case
 
-AI MUST distinguish Security Case from Maintenance Case.
+AI ต้องแยก Security Case ออกจาก Maintenance Case
 
-When an event requires both, the Primary Owner, linked Case references, update responsibility and closure rule SHOULD be defined by the applicable workflow or Task Template.
+หากเหตุเดียวต้องใช้ทั้งสอง Case ต้องกำหนด Primary Owner, Linked Case Reference, ผู้รับผิดชอบการอัปเดต และเกณฑ์ปิด Case ตาม Workflow หรือ Task Template ที่เกี่ยวข้อง
 
-## HOTO Rule
+## กฎ HOTO
 
-Security Case summaries MUST count actual cases and exclude False Alarm cases when the approved HOTO format requires that exclusion.
+การสรุป Security Case สำหรับ HOTO ต้องนับเฉพาะ Case จริงและไม่รวม False Alarm ตามรูปแบบที่ Boss อนุมัติ
 
-## AI Constraints
+## ข้อจำกัดของ AI (AI Constraints)
 
-- AI MUST NOT invent a Case No., Event Type, CAT or status.
-- AI MUST flag conflicting case totals or status data.
-- AI MUST distinguish Case creation from formal emergency-plan activation.
+- ห้ามสร้าง Case No., Event Type, CAT หรือ Status ขึ้นเอง
+- ต้องแจ้งเมื่อยอดรวม Case หรือ Status ขัดแย้งกัน
+- ต้องแยกการเปิด Case ออกจากการประกาศใช้แผนฉุกเฉิน
+
+## สิ่งที่ต้องตรวจสอบต่อ (Pending Validation)
+
+ต้องตรวจเทียบกับ Mozart Master Data, Event Type Inventory, Task Template และ Classification/Escalation Matrix ฉบับล่าสุดก่อนเปลี่ยนสถานะเป็น `active`
 

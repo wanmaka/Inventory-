@@ -1,76 +1,105 @@
 ---
 kb_id: REG-DEC-001
-title: Master Decision Log
+title: "ทะเบียนการตัดสินใจหลัก (Master Decision Log)"
+description: "บันทึก Decision ที่ Boss ยืนยัน พร้อมวันที่ สถานะ และหลักการไม่แก้ไขประวัติย้อนหลังโดยไม่มีร่องรอย"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
+status: active
 domain: register
 knowledge_type: decision_record
-status: active
-effective_date: 2026-08-25
+source_authority: boss_confirmed
 sensitivity: internal
-owner: Wanmaka Promchoto
 ---
 
-# Master Decision Log
+# ทะเบียนการตัดสินใจหลัก (Master Decision Log)
 
-## Decisions Confirmed on 2026-08-25
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | บันทึก Decision ที่ Boss ยืนยัน พร้อมวันที่และสถานะ |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
-### DEC-20260825-001 — Two-pillar KB Architecture
+## Decision ที่ยืนยันเมื่อวันที่ 25 สิงหาคม 2026
 
-- Status: Approved
-- Decision: KB Master has two main pillars: Work Knowledge Base and Boss Profile & Personal Context.
+### DEC-20260825-001 — โครงสร้าง KB สองเสาหลัก
 
-### DEC-20260825-002 — Work Domain Separation
+- สถานะ: Approved
+- Decision: KB Master มีสองเสาหลัก ได้แก่ Work Knowledge Base และ Boss Profile & Personal Context
 
-- Status: Approved
-- Decision: One Bangkok/SOC Work KB and Personal Business KB are separate domains.
+### DEC-20260825-002 — การแยก Work Domain
 
-### DEC-20260825-003 — Personal Context Scope
+- สถานะ: Approved
+- Decision: One Bangkok/SOC Work KB และ Personal Business KB ต้องเป็นคนละ Domain
 
-- Status: Approved
-- Decision: Boss Profile includes professional identity, working style, health, insurance, birthday, personal life and other approved personal context.
+### DEC-20260825-003 — ขอบเขต Personal Context
 
-### DEC-20260825-004 — Personal Context Usage
+- สถานะ: Approved
+- Decision: Boss Profile ครอบคลุม Professional Identity, Working Style, สุขภาพ ประกัน วันเกิด ชีวิตส่วนตัว และ Personal Context ที่ Boss อนุญาต
 
-- Status: Approved
-- Decision: General Personal Context may be used normally. Sensitive Personal Context may be used only when directly relevant or explicitly requested and must not be mixed into work outputs.
+### DEC-20260825-004 — วิธีใช้ Personal Context
 
-### DEC-20260825-005 — AI Authority Boundary
+- สถานะ: Approved
+- Decision: General Personal Context ใช้ปรับคำตอบได้ตามปกติ ส่วน Sensitive Personal Context ใช้เฉพาะเมื่อเกี่ยวข้องโดยตรงหรือ Boss เป็นผู้ถาม และห้ามผสมใน Work Output
 
-- Status: Approved
-- Decision: AI is a Knowledge Assistant and Decision Support only. AI has no authority to declare, approve, determine facts or command on behalf of DCC, IC, SOC Supervisor or One Bangkok authorities.
+### DEC-20260825-005 — ขอบเขตอำนาจ AI
 
-### DEC-20260825-006 — Emergency Plan Authority
+- สถานะ: Approved
+- Decision: AI เป็น Knowledge Assistant และ Decision Support เท่านั้น ไม่มีอำนาจประกาศ อนุมัติ ตัดสินข้อเท็จจริง หรือสั่งการแทน DCC, IC, SOC Supervisor หรือผู้มีอำนาจของ One Bangkok
 
-- Status: Approved
-- Decision: DCC declares, escalates, de-escalates, stands down and terminates emergency plans. Each SOP predefines the Field IC position. Field IC commands at the scene or ICP. SOC communicates to relevant stakeholders.
+### DEC-20260825-006 — อำนาจประกาศแผนฉุกเฉิน
+
+- สถานะ: Approved
+- Decision: DCC ประกาศใช้ ยกระดับ ลดระดับ Stand Down และยุติแผน แต่ละ SOP กำหนด Field IC ล่วงหน้า Field IC สั่งการหน้างาน และ SOC สื่อสารไปยังหน่วยงานที่เกี่ยวข้อง
 
 ### DEC-20260825-007 — Immediate SOC Protective Actions
 
-- Status: Approved
-- Decision: Before formal plan activation, SOC may dispatch EOT/Security, establish preliminary area control, advise avoidance or safe distance, coordinate first aid, apply preliminary Access Control and open a Mozart Case with evidence collection.
+- สถานะ: Approved
+- Decision: ก่อนการประกาศใช้แผน SOC สามารถ Dispatch EOT/Security ควบคุมพื้นที่เบื้องต้น แนะนำให้หลีกเลี่ยงพื้นที่ ประสาน First Aid ควบคุม Access เบื้องต้น และเปิด Mozart Case พร้อมรวบรวม Evidence
 
-### DEC-20260825-008 — Urgent Case Scope
+### DEC-20260825-008 — ขอบเขต Urgent Case
 
-- Status: Approved
-- Decision: Urgent handling includes CAT 1, CAT 2 and unclassified events involving Life Safety, Active Threat, Maximum Security or multi-zone impact. Urgent cases may be opened before verification.
+- สถานะ: Approved
+- Decision: Urgent Handling ครอบคลุม CAT 1, CAT 2 และเหตุที่ยังไม่ทราบ CAT แต่เกี่ยวข้องกับ Life Safety, Active Threat, Maximum Security หรือหลาย Zone และสามารถเปิด Case ก่อน Verification ได้
 
 ### DEC-20260825-009 — Zone 2 Master
 
-- Status: Approved
-- Decision: Zone 2 includes Tower 4, The Storeys, Andaz Hotel and Pathom House Hotel. All are Operating as of August 2026.
+- สถานะ: Approved
+- Decision: Zone 2 ประกอบด้วย Tower 4, The Storeys, Andaz Hotel และ Pathom House Hotel ซึ่งมีสถานะ Operating ณ เดือนสิงหาคม 2026
 
 ### DEC-20260825-010 — One Power Classification
 
-- Status: Approved
-- Decision: One Power is officially classified as Maximum Security.
+- สถานะ: Approved
+- Decision: One Power เป็นพื้นที่ Maximum Security อย่างเป็นทางการ
 
 ### DEC-20260825-011 — Public Repository
 
-- Status: Approved by repository owner
-- Decision: Owner acknowledged that the Inventory repository is Public and instructed the AI to proceed with publication.
+- สถานะ: Approved by Repository Owner
+- Decision: Owner รับทราบว่า Inventory Repository เป็น Public และสั่งให้ดำเนินการเผยแพร่ KB
 
-## Decision Handling Rule
+### DEC-20260825-012 — มาตรฐานภาษา KB
 
-AI MUST preserve Approved decisions until Boss changes or supersedes them.
+- สถานะ: Approved
+- Decision: เนื้อหา KB ใช้ภาษาไทยเป็นหลัก ภาษาอังกฤษใช้กับคำเฉพาะ ชื่อระบบ ชื่อตำแหน่ง และหัวข้อรูปแบบไทย–อังกฤษ
 
-When a decision changes, create a new Decision ID and mark the previous decision `Superseded`. Do not silently overwrite decision history.
+### DEC-20260825-013 — Metadata บังคับ
+
+- สถานะ: Approved
+- Decision: ทุก KB ต้องมี Description, Owner, Last Updated และ Status
+
+### DEC-20260825-014 — Operational Status
+
+- สถานะ: Approved
+- Decision: Status ต้องบอกสถานะการใช้งานจริง โดยใช้ Draft, Pending Validation, Active, Active—Update Required, Suspended, Superseded และ Archived
+
+### DEC-20260825-015 — การแทนที่ KB Baseline
+
+- สถานะ: Approved
+- Decision: ลบ Working Tree เดิมและแทนที่ด้วย KB ชุดใหม่ที่เป็นภาษาไทยเป็นหลักและใช้ Metadata/Status มาตรฐาน โดยคง Git History เพื่อการตรวจสอบย้อนหลัง
+
+## กฎการจัดการ Decision (Decision Handling Rule)
+
+AI ต้องรักษา Approved Decision จนกว่า Boss จะเปลี่ยนหรือ Supersede
+
+เมื่อ Decision เปลี่ยน ต้องสร้าง Decision ID ใหม่และกำหนด Decision เดิมเป็น `Superseded` ห้ามแก้ประวัติย้อนหลังโดยไม่มีร่องรอย
 

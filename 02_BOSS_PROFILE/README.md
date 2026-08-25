@@ -1,30 +1,38 @@
 ---
 kb_id: BP-INDEX-001
-title: Boss Profile and Personal Context Index
-domain: boss_profile
-knowledge_type: personal_context
+title: "ประวัติและบริบทส่วนบุคคลของ Boss (Boss Profile and Personal Context Index)"
+description: "สารบัญข้อมูลตัวตน วิธีคิด วิธีทำงาน ความชอบ และบริบทส่วนบุคคลที่ช่วยให้ AI ทำงานร่วมกับ Boss ได้ถูกต้อง"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
 status: active
-effective_date: 2026-08-25
+domain: boss_profile
+knowledge_type: index
 source_authority: boss_confirmed
 sensitivity: general_personal
-owner: Wanmaka Promchoto
 ---
 
-# Boss Profile and Personal Context
+# ประวัติและบริบทส่วนบุคคลของ Boss (Boss Profile and Personal Context Index)
 
-## Purpose
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | สารบัญตัวตน วิธีคิด วิธีทำงาน ความชอบ และบริบทส่วนบุคคลของ Boss |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
+
+## วัตถุประสงค์ (Purpose)
 
 ส่วนนี้ช่วยให้ AI เข้าใจว่า Boss คือใคร คิด ตัดสินใจ สื่อสาร และทำงานอย่างไร รวมถึงบริบทชีวิตส่วนตัวที่ Boss อนุญาตให้เก็บ
 
-## Sections
+## เนื้อหา (Sections)
 
-1. [Professional Operating System](01_PROFESSIONAL_OPERATING_SYSTEM.md)
-2. [Personal Context Governance and Sensitive Context](02_PERSONAL_CONTEXT.md)
+1. [ตัวตนและระบบการทำงานระดับมืออาชีพ (Professional Operating System)](01_PROFESSIONAL_OPERATING_SYSTEM.md)
+2. [บริบทส่วนบุคคลและกฎการใช้งาน (Personal Context)](02_PERSONAL_CONTEXT.md)
 
-## Usage Boundary
+## ขอบเขตการใช้งาน (Usage Boundary)
 
-- Professional and General Personal Context MAY be used to adapt responses automatically.
-- Sensitive Personal Context MUST be used only when directly relevant or when Boss explicitly asks.
-- Sensitive Personal Context MUST NOT appear in One Bangkok/SOC work outputs.
-- Boss preferences MUST NOT override Approved operational requirements.
+- Professional Context และ General Personal Context สามารถใช้ปรับคำตอบได้ตามปกติ
+- Sensitive Personal Context ใช้เฉพาะเมื่อเกี่ยวข้องโดยตรงหรือ Boss เป็นผู้ถาม
+- ห้ามนำ Sensitive Personal Context ไปใส่ใน One Bangkok/SOC Work Output
+- ความชอบของ Boss ห้าม Override ข้อกำหนด Approved
 

@@ -1,13 +1,14 @@
 ---
 kb_id: WK-OBK-SOC-001
-title: SOC Operating Model
+title: "รูปแบบการดำเนินงานของ SOC (SOC Operating Model)"
+description: "อธิบายคำนิยาม ภารกิจ ช่องทางรับข้อมูล วงจรการทำงาน และบทบาทพื้นฐานของ SOC Operator และ SOC Supervisor"
+owner: "SOC"
+last_updated: 2026-08-25
+status: pending_validation
 domain: one_bangkok_soc
 knowledge_type: definition
-status: active_draft
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
-owner: SOC
 applies_to:
   - SOC_Operator
   - SOC_Supervisor
@@ -16,104 +17,115 @@ related_kb_ids:
   - WK-OBK-MOZ-001
 ---
 
-# SOC Operating Model
+# รูปแบบการดำเนินงานของ SOC (SOC Operating Model)
 
-## Canonical Definition
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | คำนิยาม ภารกิจ ช่องทางรับข้อมูล วงจรการทำงาน และบทบาทพื้นฐานของ SOC |
+| เจ้าของข้อมูล (Owner) | SOC |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | รอตรวจสอบ (Pending Validation) |
 
-Security Operation Centre หรือ SOC เป็นศูนย์ควบคุมและประสานงานด้าน Physical Security
+## คำนิยามหลัก (Canonical Definition)
+
+ศูนย์ปฏิบัติการรักษาความปลอดภัย (Security Operation Centre: SOC) เป็นศูนย์ควบคุมและประสานงานด้าน Physical Security
 
 SOC มีหน้าที่เฝ้าระวัง ตรวจสอบ วิเคราะห์ บันทึก และประสานการตอบสนองต่อเหตุการณ์ที่อาจส่งผลกระทบต่อชีวิต ทรัพย์สิน การดำเนินงาน การให้บริการ และภาพลักษณ์ของโครงการ
 
-SOC MUST NOT be interpreted as a Cybersecurity SOC.
+ห้ามตีความ SOC ใน KB นี้ว่าเป็น Cybersecurity SOC
 
-DCC ในบริบท One Bangkok หมายถึง District Command Center.
+DCC ในบริบท One Bangkok หมายถึง District Command Center
 
-## Operating Channels
+## ช่องทางข้อมูลของ SOC (Operating Channels)
 
-SOC รับและเชื่อมโยงข้อมูลจากช่องทางต่าง ๆ เช่น:
+SOC รับและเชื่อมโยงข้อมูลจาก:
 
-- CCTV and VMS
-- Building and security alarms
+- CCTV และ Video Management System: VMS
+- Alarm จากระบบอาคารและระบบรักษาความปลอดภัย
 - Access Control
 - Video Analytics
-- LPR
-- Traffic and parking systems
-- Telephone and radio communication
+- License Plate Recognition: LPR
+- ระบบจราจรและลานจอดรถ
+- โทรศัพท์และวิทยุสื่อสาร
 - Mozart
 - Ops App
-- Security field personnel
-- Building teams
+- เจ้าหน้าที่รักษาความปลอดภัยภาคสนาม
+- ทีมอาคาร
 - DCC
-- Contractors and relevant stakeholders
+- ผู้รับเหมาและหน่วยงานที่เกี่ยวข้อง
 
-## End-to-End Operating Lifecycle
+## วงจรการทำงานหลัก (Operating Lifecycle)
 
-`Receive → Verify → Assess → Create/Update Case → Coordinate → Follow Up → Collect Evidence → Report → Resolve Case → Review Lessons`
+`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิดหรืออัปเดต Case → ประสานงาน → ติดตาม → รวบรวมหลักฐาน → รายงาน → Resolve Case → ถอดบทเรียน`
 
-Urgent events MAY use a different opening sequence. See `WK-OBK-MOZ-001`.
+เหตุเร่งด่วนสามารถใช้ลำดับการเปิด Case ที่แตกต่างออกไป โปรดดู `WK-OBK-MOZ-001`
 
-## Minimum Situational Questions
+## คำถามสถานการณ์ขั้นต่ำ (Minimum Situational Questions)
 
-SOC SHOULD be able to answer:
+SOC ควรตอบได้ว่า:
 
-1. What happened?
-2. Where did it happen?
-3. When did it happen?
-4. Who is affected?
-5. Who is responding?
-6. What is the current status?
-7. What risks remain?
-8. Is escalation required?
-9. How was the event resolved?
-10. Is preventive or corrective action required?
+1. เกิดอะไรขึ้น
+2. เกิดที่ไหน
+3. เกิดเมื่อใด
+4. ใครได้รับผลกระทบ
+5. ใครกำลังดำเนินการ
+6. สถานการณ์ปัจจุบันเป็นอย่างไร
+7. ยังมีความเสี่ยงอะไร
+8. ต้องยกระดับหรือไม่
+9. เหตุการณ์ยุติอย่างไร
+10. ต้องมี Preventive Action หรือ Corrective Action หรือไม่
 
-## SOC Operator
+## ผู้ปฏิบัติงาน SOC (SOC Operator)
 
-SOC Operator is the frontline operational role responsible for assigned seats or areas.
+SOC Operator เป็นผู้ปฏิบัติงานแนวหน้าที่รับผิดชอบ Seat หรือพื้นที่ที่ได้รับมอบหมาย
 
-Operator responsibilities include:
+หน้าที่หลัก:
 
-- Monitor assigned systems and communication channels.
-- Verify events using Live View, Playback, system data and field confirmation.
-- Select the correct Event Type and maintain an accurate Timeline.
-- Coordinate field response with relevant stakeholders.
-- Follow up until ownership, arrival, findings, actions and resolution are known.
-- Collect and attach appropriate evidence.
-- Escalate significant, high-impact, unverified or out-of-authority events.
-- Handover Active Cases, system issues and pending actions completely.
+- เฝ้าระวังระบบและช่องทางสื่อสารที่ได้รับมอบหมาย
+- ตรวจสอบเหตุด้วย Live View, Playback, ข้อมูลระบบ และการยืนยันจากหน้างาน
+- เลือก Event Type ให้ถูกต้องและบันทึก Timeline ตามลำดับเวลา
+- ประสานหน่วยงานตอบสนองที่เกี่ยวข้อง
+- ติดตามจนทราบผู้รับงาน เวลาเข้าพื้นที่ Findings การดำเนินการ และผลยุติ
+- รวบรวมและแนบหลักฐานที่เหมาะสม
+- ยกระดับเหตุสำคัญ เหตุผลกระทบสูง เหตุที่ยังไม่ยืนยัน หรือเหตุเกินอำนาจ
+- ส่งมอบ Active Case ปัญหาระบบ และงานคงค้างให้ผลัดถัดไปครบถ้วน
 
-## SOC Supervisor
+## หัวหน้าผลัด SOC (SOC Supervisor)
 
-SOC Supervisor controls the overall shift, including people, incidents, systems, information and risk.
+SOC Supervisor ควบคุมภาพรวมของผลัดทั้งด้านบุคลากร เหตุการณ์ ระบบ ข้อมูล และความเสี่ยง
 
-Supervisor responsibilities include:
+หน้าที่หลัก:
 
-- Assign seats and verify shift readiness.
-- Review Event Type, Timeline, evidence and coordination quality.
-- Assess severity, urgency, impact and escalation requirements.
-- Allocate resources and prioritize concurrent events.
-- Control the accuracy and consistency of SOC communications.
-- Monitor Active Cases, overdue actions and SLA risks.
-- Coach and develop Operators.
-- Maintain discipline and operational standards.
-- Perform command or coordination duties within the authority defined by the applicable SOP.
+- จัด Seat Assignment และตรวจความพร้อมก่อนเริ่มผลัด
+- ตรวจ Event Type, Timeline, Evidence และคุณภาพการประสานงาน
+- ประเมินความรุนแรง ความเร่งด่วน ผลกระทบ และความจำเป็นในการยกระดับ
+- จัดสรรกำลังและจัดลำดับความสำคัญเมื่อเกิดหลายเหตุพร้อมกัน
+- ควบคุมความถูกต้องและความสอดคล้องของข้อมูลที่ออกจาก SOC
+- ติดตาม Active Case งานเกินกำหนด และความเสี่ยงด้าน SLA
+- สอนงานและพัฒนา Operator
+- ควบคุมวินัยและมาตรฐานการปฏิบัติงาน
+- ทำหน้าที่ด้าน Command หรือ Coordination ตามอำนาจที่กำหนดใน SOP ที่เกี่ยวข้อง
 
-## Operator and Supervisor Distinction
+## ความแตกต่างของบทบาท (Role Distinction)
 
-- Operator owns the accuracy and continuity of assigned event or area handling.
-- Supervisor owns shift-wide quality, prioritization, decision support, resource control and escalation.
+- Operator รับผิดชอบความถูกต้องและความต่อเนื่องของเหตุหรือพื้นที่ที่ได้รับมอบหมาย
+- Supervisor รับผิดชอบคุณภาพภาพรวมของผลัด การจัดลำดับ การสนับสนุนการตัดสินใจ การจัดทรัพยากร และการยกระดับ
 
-## Operating Hours
+## เวลาปฏิบัติงาน (Operating Hours)
 
-- SOC operates 24 hours.
-- Contact Centre operates 08:00–22:30.
-- After Contact Centre closes, calls to the Contact Centre number are routed to SOC.
+- SOC ปฏิบัติงาน 24 ชั่วโมง
+- Contact Centre ปฏิบัติงานเวลา 08:00–22:30
+- หลัง Contact Centre ปิด สายที่โทรเข้าหมายเลข Contact Centre จะถูกส่งต่อมายัง SOC
 
-## AI Constraints
+## ข้อจำกัดของ AI (AI Constraints)
 
-- AI MUST distinguish fact from inference.
-- AI MUST NOT assign guilt from CCTV or Analytics alone.
-- AI MUST identify Operational Owner before assigning responsibility.
-- AI MUST consider whether an event is Security, Maintenance or requires linked handling.
-- AI MUST respect Privacy, Guest Experience, Resident Experience and asset-specific service standards.
+- ต้องแยกข้อเท็จจริงออกจากข้อสันนิษฐาน
+- ห้ามตัดสินความผิดจาก CCTV หรือ Analytics เพียงอย่างเดียว
+- ต้องระบุ Operational Owner ก่อนสรุปความรับผิดชอบ
+- ต้องพิจารณาว่าเป็น Security Case, Maintenance Case หรือจำเป็นต้องเชื่อมโยงทั้งสองประเภท
+- ต้องคำนึงถึง Privacy, Guest Experience, Resident Experience และมาตรฐานเฉพาะของแต่ละ Asset
+
+## สิ่งที่ต้องตรวจสอบต่อ (Pending Validation)
+
+เนื้อหานี้ต้องตรวจเทียบกับ Core SOC Master Framework, Authority Matrix และ SOP/WI ฉบับ Approved ก่อนเปลี่ยนสถานะเป็น `active`
 

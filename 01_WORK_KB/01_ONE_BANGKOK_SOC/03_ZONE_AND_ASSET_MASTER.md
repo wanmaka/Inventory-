@@ -1,76 +1,84 @@
 ---
 kb_id: WK-OBK-ZONE-001
-title: SOC Seat, Zone and Asset Master
+title: "ทะเบียน Seat, Zone และ Asset ของ SOC (SOC Seat, Zone and Asset Master)"
+description: "รวบรวมขอบเขต Seat, Zone, Asset, Operational Status และหลักการประเมินความเสี่ยงตามพื้นที่ของ SOC"
+owner: "SOC"
+last_updated: 2026-08-25
+status: active_update_required
 domain: one_bangkok_soc
 knowledge_type: zone_profile
-status: active_draft
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
-owner: SOC
 ---
 
-# SOC Seat, Zone and Asset Master
+# ทะเบียน Seat, Zone และ Asset ของ SOC (SOC Seat, Zone and Asset Master)
 
-## Effective Scope
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | ขอบเขต Seat, Zone, Asset, Operational Status และความเสี่ยงเฉพาะพื้นที่ของ SOC |
+| เจ้าของข้อมูล (Owner) | SOC |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง—ต้องอัปเดต (Active—Update Required) |
+
+## ขอบเขตที่มีผล (Effective Scope)
 
 Zone Mapping นี้เป็นโครงล่าสุด ณ เดือนสิงหาคม 2026
 
-Seat Assignment and asset operating status MAY change. Time-sensitive status MUST include an effective date.
+Seat Assignment และ Operational Status สามารถเปลี่ยนแปลงได้ ข้อมูลที่อ่อนไหวต่อเวลาต้องระบุวันที่มีผล
 
 ## CI Security
 
-CI Security monitors the overall physical-security situation, including significant events and events affecting multiple zones.
+CI Security เฝ้าระวังภาพรวมด้าน Physical Security รวมถึงเหตุสำคัญและเหตุที่กระทบหลาย Zone
 
-Core focus:
+ประเด็นหลัก:
 
-- Cross-zone security monitoring
-- Suspicious persons or behavior
-- Lost property and investigation support
-- Disputes or fights
-- Reputational impact
-- DCC and central-stakeholder coordination
-- Support to Zone Operators during major events
+- การเฝ้าระวัง Security แบบ Cross-zone
+- บุคคลหรือพฤติกรรมต้องสงสัย
+- ทรัพย์สินสูญหายและการสนับสนุนการตรวจสอบ
+- ข้อพิพาทหรือการทะเลาะวิวาท
+- ผลกระทบต่อภาพลักษณ์
+- การประสาน DCC และหน่วยงานส่วนกลาง
+- การสนับสนุน Zone Operator เมื่อเกิดเหตุใหญ่
 
 ## CI Traffic
 
-CI Traffic monitors traffic movement, entrances, exits, drop-off areas and parking-related conditions.
+CI Traffic เฝ้าระวังการเคลื่อนตัวของรถ ทางเข้าออก Drop-off และสภาพพื้นที่จอดรถ
 
-Core focus:
+ประเด็นหลัก:
 
-- Traffic congestion and trigger points
-- Vehicle accumulation and bottlenecks
-- Accidents, broken-down vehicles and obstructions
-- Alternative route coordination
-- CCTV, LPR, car park and GPS information
-- Coordination with field traffic personnel
+- Traffic Congestion และ Trigger Point
+- จุดสะสมรถและคอขวด
+- อุบัติเหตุ รถเสีย และสิ่งกีดขวาง
+- การประสานเส้นทางสำรอง
+- การใช้ CCTV, LPR, Car Park System และ GPS
+- การประสานเจ้าหน้าที่จราจรภาคสนาม
 
-Confirmed GPS monitoring channels:
+ช่องทาง GPS ที่ยืนยันแล้ว:
 
 - One Bangkok Mobile Application
-- Montri company GPS tracking website/system
+- เว็บไซต์หรือระบบ GPS Tracking ของบริษัทมนตรี
 
 ## Zone 1
 
-Assets:
+Asset:
 
 - Tower 2
 - Tower 3
 - Fraser Suites
-- Connected common and shared areas
+- พื้นที่ส่วนกลางและพื้นที่เชื่อมต่อ
 
-Primary operating themes:
+ลักษณะงานหลัก:
 
-- Office security
-- Hotel security and guest privacy
-- Construction, commissioning and tenant fit-out
-- Contractor and material movement
+- Office Security
+- Hotel Security และ Guest Privacy
+- Construction, Commissioning และ Tenant Fit-out
+- Contractor และ Material Movement
 - Access Control
-- Mixed-use incident coordination
+- Mixed-use Incident Coordination
 
 ## Zone 2
 
-Confirmed assets and status as of August 2026:
+Asset และสถานะที่ยืนยัน ณ เดือนสิงหาคม 2026:
 
 | Asset | Operational Status |
 |---|---|
@@ -79,91 +87,95 @@ Confirmed assets and status as of August 2026:
 | Andaz Hotel | Operating |
 | Pathom House Hotel | Operating |
 
-Primary operating themes:
+ลักษณะงานหลัก:
 
-- Office, retail and hotel security
-- Luxury-service expectations
+- Office, Retail และ Hotel Security
+- มาตรฐานบริการระดับสูง
 - Access Control
-- Customer, guest and tenant coordination
-- Privacy-sensitive areas
-- Lost property and suspicious behavior
-- Security, customer service and maintenance distinction
+- การประสานลูกค้า แขก ผู้เช่า และทีมอาคาร
+- พื้นที่อ่อนไหวด้าน Privacy
+- Lost Property และ Suspicious Behavior
+- การแยก Security, Customer Service และ Maintenance
 
-Privacy rule:
+กฎ Privacy:
 
-CCTV or Video Analytics near restroom or changing facilities MUST monitor only entrances, corridors and common areas. Coverage MUST NOT extend into private areas.
+CCTV หรือ Video Analytics ใกล้ห้องน้ำหรือห้องเปลี่ยนเสื้อผ้าต้องตรวจเฉพาะทางเข้า ทางเดิน และพื้นที่ส่วนกลาง ห้ามครอบคลุมพื้นที่ส่วนบุคคล
 
 ## Zone 3
 
-Assets:
+Asset:
 
 - The Ritz-Carlton
 - POST 1928
 - One89 Wireless
 - Eighteen Seven
 - Tower 5
-- Shared areas and infrastructure
+- Shared Area และ Shared Infrastructure
 
-Primary operating themes:
+ลักษณะงานหลัก:
 
-- Luxury hotel, retail, residential and office security
-- Shared Area ownership
-- Cross-asset investigation and CCTV tracking
-- Privacy and reputational impact
-- Contractor and fit-out management
-- Multi-system evidence coordination
+- Luxury Hotel, Retail, Residential และ Office Security
+- การกำหนด Owner ของ Shared Area
+- การตรวจสอบข้าม Asset และการติดตาม CCTV
+- Privacy และผลกระทบต่อภาพลักษณ์
+- Contractor และ Fit-out Management
+- การรวบรวมหลักฐานจากหลายระบบ
 
 ## Zone 4
 
-Assets:
+Asset:
 
 - One Bangkok Forum
 - One Power
-- P5 Parking future asset
-- Former Prelude area and planned C5 Residence development
+- P5 Parking ซึ่งเป็น Future Asset
+- พื้นที่ Prelude เดิมและแผนพัฒนา C5 Residence
 
-Primary operating themes:
+ลักษณะงานหลัก:
 
-- Event and crowd monitoring
-- Critical infrastructure protection
-- Parking and traffic operations
-- Contractor, demolition and construction control
-- Future asset integration
+- Event and Crowd Monitoring
+- Critical Infrastructure Protection
+- Parking and Traffic Operations
+- Contractor, Demolition และ Construction Control
+- Future Asset Integration
 
 ## One Power
 
-One Power is officially classified as a Maximum Security area.
+One Power ได้รับการยืนยันว่าเป็นพื้นที่ Maximum Security
 
-Operating principle:
+หลักการทำงาน:
 
 `Verify Early → Escalate Early → Maintain Full Traceability`
 
-AI SHOULD evaluate:
+SOC และ AI ควรประเมิน:
 
-- Alarm cause
-- Person identity and authorization
-- Approved maintenance or contractor activity
-- Potential multi-asset utility impact
-- Requirement for field verification
-- Security Case and Maintenance Case relationship
-- DCC or management escalation requirement
+- สาเหตุของ Alarm
+- ตัวตนและสิทธิ์ของบุคคลในพื้นที่
+- งานซ่อมบำรุงหรือกิจกรรมผู้รับเหมาที่ได้รับอนุญาต
+- ผลกระทบต่อ Utility หรือหลาย Asset
+- ความจำเป็นในการส่งเจ้าหน้าที่ตรวจสอบ
+- ความสัมพันธ์ระหว่าง Security Case และ Maintenance Case
+- ความจำเป็นในการแจ้ง DCC หรือผู้บริหาร
 
-## Shared Area Rule
+## กฎพื้นที่ใช้ร่วมกัน (Shared Area Rule)
 
-SOC MUST NOT assign event ownership from camera location alone.
+SOC ห้ามสรุปเจ้าของเหตุจากตำแหน่งกล้องเพียงอย่างเดียว
 
-SOC MUST verify:
+SOC ต้องตรวจสอบ:
 
-- Actual incident location
-- Area boundary
-- Affected asset or assets
+- สถานที่เกิดเหตุจริง
+- ขอบเขตพื้นที่
+- Asset ที่ได้รับผลกระทบ
 - Operational Owner
 - Supporting Owner
-- Required CCTV systems and communication channels
+- ระบบ CCTV และช่องทางสื่อสารที่ต้องใช้
 
-## AI Constraints
+## ข้อจำกัดของ AI (AI Constraints)
 
-- AI MUST distinguish stable Asset Profile from time-sensitive Operational Status.
-- AI MUST NOT infer current construction or operating status without a dated source.
-- AI MUST consider different Privacy and Service standards for hotel, residential, retail and office assets.
+- ต้องแยก Asset Profile ที่คงที่ออกจาก Operational Status ที่อ่อนไหวต่อเวลา
+- ห้ามสรุปสถานะก่อสร้างหรือ Operating ปัจจุบันโดยไม่มีแหล่งข้อมูลระบุวันที่
+- ต้องคำนึงถึงมาตรฐาน Privacy และ Service ที่แตกต่างกันของ Hotel, Residential, Retail และ Office
+
+## เหตุผลที่ต้องอัปเดต (Update Requirement)
+
+ต้องตรวจสอบ Operational Status และ Operational Owner ของ Asset นอก Zone 2 รวมถึงการเปลี่ยนแปลง Future Asset ก่อนเปลี่ยนสถานะเป็น `active`
 

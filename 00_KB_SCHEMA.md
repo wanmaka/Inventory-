@@ -1,43 +1,60 @@
 ---
 kb_id: GOV-KB-001
-title: AI-ready Knowledge Schema
+title: "โครงสร้างองค์ความรู้สำหรับ AI (AI-ready Knowledge Schema)"
+description: "กำหนด Metadata คำศัพท์ควบคุม สถานะ รูปแบบเนื้อหา และหลักการตั้งรหัสสำหรับทุก Knowledge Item"
+owner: "Wanmaka Promchoto"
+last_updated: 2026-08-25
+status: active
 domain: shared_governance
 knowledge_type: schema
-status: approved
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
 ---
 
-# AI-ready Knowledge Schema
+# โครงสร้างองค์ความรู้สำหรับ AI (AI-ready Knowledge Schema)
 
-## Required Metadata
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | กำหนด Metadata คำศัพท์ควบคุม สถานะ และรูปแบบมาตรฐานสำหรับทุก KB |
+| เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
-ทุก Knowledge Item SHOULD ใช้ YAML Front Matter ตามรูปแบบนี้:
+## Metadata บังคับ (Required Metadata)
+
+ทุก Knowledge Item ต้องมีอย่างน้อย:
 
 ```yaml
 ---
 kb_id: WK-OBK-EXAMPLE-001
-title: Example Knowledge Item
+title: "ชื่อภาษาไทย (English Title)"
+description: "อธิบายว่า KB นี้เกี่ยวกับอะไรและใช้เพื่ออะไร"
+owner: "Knowledge Owner"
+last_updated: 2026-08-25
+status: active
 domain: one_bangkok_soc
 knowledge_type: operational_rule
-status: approved
-effective_date: 2026-08-25
-last_reviewed: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
-owner: SOC
-applies_to:
-  - SOC_Operator
-  - SOC_Supervisor
-related_kb_ids: []
-supersedes: null
 ---
 ```
 
-## Controlled Values
+Metadata สี่รายการต่อไปนี้ต้องปรากฏใน YAML และตารางข้อมูลด้านบนของทุกไฟล์:
 
-### Domain
+1. คำอธิบาย (Description)
+2. เจ้าของข้อมูล (Owner)
+3. อัปเดตล่าสุด (Last Updated)
+4. สถานะ (Status)
+
+## มาตรฐานภาษา (Language Standard)
+
+- เนื้อหาหลักต้องใช้ภาษาไทย
+- หัวข้อใช้รูปแบบ `ชื่อภาษาไทย (English Title)` เมื่อภาษาอังกฤษช่วยระบุความหมาย
+- ใช้ภาษาอังกฤษกับคำเฉพาะ ชื่อระบบ ชื่อตำแหน่ง และ Controlled Value
+- การกล่าวถึงคำสำคัญครั้งแรกควรระบุชื่อเต็มและตัวย่อ
+- ห้ามแปลชื่อระบบหรือชื่อทางการจนความหมายเปลี่ยน
+
+## ค่า Domain
 
 - `one_bangkok_soc`
 - `personal_business`
@@ -45,8 +62,9 @@ supersedes: null
 - `shared_governance`
 - `register`
 
-### Knowledge Type
+## ประเภทองค์ความรู้ (Knowledge Type)
 
+- `index`
 - `definition`
 - `fact`
 - `role_profile`
@@ -63,16 +81,19 @@ supersedes: null
 - `decision_record`
 - `schema`
 
-### Status
+## สถานะการใช้งาน (Operational Status)
 
-- `draft`
-- `active_draft`
-- `pending_validation`
-- `approved`
-- `superseded`
-- `archived`
+| ค่าในระบบ | ชื่อแสดงผล | วิธีใช้ |
+|---|---|---|
+| `draft` | ร่าง (Draft) | กำลังจัดทำ ยังไม่ใช้เป็นข้อมูลอ้างอิงหลัก |
+| `pending_validation` | รอตรวจสอบ (Pending Validation) | เนื้อหาพร้อมเบื้องต้น แต่รอผู้มีอำนาจหรือเอกสารยืนยัน |
+| `active` | ใช้งานจริง (Active) | เป็นข้อมูลปัจจุบันและใช้เป็นข้อมูลอ้างอิงได้ |
+| `active_update_required` | ใช้งานจริง—ต้องอัปเดต (Active—Update Required) | ยังใช้ได้ แต่ต้องแจ้งข้อจำกัดและเร่งทบทวน |
+| `suspended` | ระงับการใช้งาน (Suspended) | ห้ามใช้จนกว่าจะตรวจสอบหรือแก้ไข |
+| `superseded` | ถูกแทนที่ (Superseded) | มี Knowledge Item ฉบับใหม่มาแทน |
+| `archived` | จัดเก็บถาวร (Archived) | เก็บเพื่อประวัติ ไม่ใช้ปฏิบัติงาน |
 
-### Source Authority
+## อำนาจของแหล่งข้อมูล (Source Authority)
 
 - `law_or_regulation`
 - `approved_policy`
@@ -84,7 +105,7 @@ supersedes: null
 - `example`
 - `ai_inference`
 
-### Sensitivity
+## ระดับความละเอียดอ่อน (Sensitivity)
 
 - `public`
 - `internal`
@@ -92,52 +113,52 @@ supersedes: null
 - `general_personal`
 - `sensitive_personal`
 
-## Required Content Structure
+## โครงเนื้อหามาตรฐาน (Content Structure)
 
-Knowledge Item SHOULD contain only relevant sections from this list:
+Knowledge Item ควรเลือกใช้หัวข้อที่เกี่ยวข้องจากรายการต่อไปนี้:
 
-1. Purpose
-2. Canonical Definition or Rule
-3. Scope and Applicability
-4. Roles and Authority
-5. Trigger or Preconditions
+1. วัตถุประสงค์ (Purpose)
+2. คำนิยามหรือกฎหลัก (Canonical Definition or Rule)
+3. ขอบเขตการใช้งาน (Scope and Applicability)
+4. บทบาทและอำนาจ (Roles and Authority)
+5. Trigger หรือ Preconditions
 6. Inputs
-7. Workflow
-8. Decision Logic
-9. Exceptions and Limitations
-10. Evidence and Records
+7. ขั้นตอนการปฏิบัติ (Workflow)
+8. ตรรกะการตัดสินใจ (Decision Logic)
+9. ข้อยกเว้นและข้อจำกัด
+10. หลักฐานและบันทึก
 11. Outputs
-12. Escalation
-13. Closure Criteria
-14. AI Constraints
-15. Sources
-16. Change History
+12. การยกระดับ
+13. เกณฑ์ปิดงาน
+14. ข้อจำกัดของ AI
+15. แหล่งข้อมูล
+16. ประวัติการเปลี่ยนแปลง
 
-## Normative Language
+## ภาษาบังคับ (Normative Language)
 
-- `MUST / ต้อง` = Mandatory requirement
-- `MUST NOT / ห้าม` = Prohibited action
-- `SHOULD / ควร` = Recommended practice
-- `MAY / สามารถ` = Permitted action under stated conditions
-- `IF–THEN` = Deterministic decision logic
-- `UNKNOWN` = Information is unavailable and MUST NOT be guessed
+- `MUST / ต้อง` = ข้อกำหนดบังคับ
+- `MUST NOT / ห้าม` = การกระทำที่ไม่อนุญาต
+- `SHOULD / ควร` = แนวทางที่แนะนำ
+- `MAY / สามารถ` = ดำเนินการได้ตามเงื่อนไข
+- `IF–THEN` = ตรรกะการตัดสินใจ
+- `UNKNOWN` = ไม่มีข้อมูลและห้าม AI เดา
 
-## Atomic Knowledge Rule
+## หลัก Atomic Knowledge
 
-แต่ละ Knowledge Item SHOULD มีหัวข้อหลักเดียวและสามารถอ้างอิงด้วย Stable ID ได้
+แต่ละ Knowledge Item ควรมีหัวข้อหลักเดียวและอ้างอิงด้วย Stable ID ได้
 
-AI MUST NOT treat examples, historical records or drafts as Approved operational rules.
+AI ห้ามใช้ Example, Historical Record หรือ Draft เสมือนเป็น Approved Operational Rule
 
-## Naming Convention
+## รูปแบบรหัส (Naming Convention)
 
 `[DOMAIN]-[TOPIC]-[TYPE]-[SEQUENCE]`
 
 ตัวอย่าง:
 
-- `WK-OBK-CMD-001` — One Bangkok command rule
-- `WK-OBK-ZONE-001` — One Bangkok zone master
-- `WK-BIZ-GF-001` — Get Fruit business knowledge
-- `BP-PRO-001` — Boss professional profile
-- `GOV-AI-001` — AI governance
-- `REG-DEC-001` — Decision register
+- `WK-OBK-CMD-001` — กฎ Command ของ One Bangkok
+- `WK-OBK-ZONE-001` — Zone Master ของ One Bangkok
+- `WK-BIZ-GF-001` — องค์ความรู้ธุรกิจ Get Fruit
+- `BP-PRO-001` — Professional Profile ของ Boss
+- `GOV-AI-001` — AI Governance
+- `REG-DEC-001` — Decision Register
 

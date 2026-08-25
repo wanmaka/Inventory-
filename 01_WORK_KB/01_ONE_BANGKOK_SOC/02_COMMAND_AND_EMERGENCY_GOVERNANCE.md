@@ -1,13 +1,14 @@
 ---
 kb_id: WK-OBK-CMD-001
-title: Emergency Command and Immediate Response Governance
+title: "ธรรมาภิบาลการสั่งการและการตอบสนองเหตุฉุกเฉิน (Emergency Command and Immediate Response Governance)"
+description: "กำหนดอำนาจของ DCC, Field IC และ SOC รวมถึง Immediate Life Safety Response ก่อนการประกาศใช้แผนอย่างเป็นทางการ"
+owner: "DCC"
+last_updated: 2026-08-25
+status: active
 domain: one_bangkok_soc
 knowledge_type: authority_rule
-status: approved
-effective_date: 2026-08-25
 source_authority: boss_confirmed
 sensitivity: internal
-owner: DCC
 applies_to:
   - DCC
   - SOC
@@ -19,77 +20,84 @@ related_kb_ids:
   - WK-OBK-MOZ-001
 ---
 
-# Emergency Command and Immediate Response Governance
+# ธรรมาภิบาลการสั่งการและการตอบสนองเหตุฉุกเฉิน (Emergency Command and Immediate Response Governance)
 
-## Authority Model
+| รายการ | ข้อมูล |
+|---|---|
+| คำอธิบาย (Description) | อำนาจของ DCC, Field IC และ SOC รวมถึงการตอบสนองเพื่อความปลอดภัยก่อนประกาศใช้แผน |
+| เจ้าของข้อมูล (Owner) | DCC |
+| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| สถานะ (Status) | ใช้งานจริง (Active) |
 
-- DCC MUST declare, escalate, de-escalate, stand down and terminate an emergency plan.
-- Each emergency SOP MUST define the designated Field IC position in advance.
-- Field IC MUST command operational response at the incident scene or Incident Command Post.
-- SOC MUST communicate plan activation and relevant instructions to all stakeholders identified in the plan-specific Notification Matrix.
-- SOC and DCC perform Rear Command functions.
+## รูปแบบอำนาจ (Authority Model)
 
-## Field and Rear Command
+- DCC ต้องเป็นผู้ประกาศใช้ ยกระดับ ลดระดับ Stand Down และยุติแผนฉุกเฉิน
+- SOP ของแต่ละแผนต้องกำหนดตำแหน่ง Field IC ไว้ล่วงหน้า
+- Field IC ต้องควบคุมและสั่งการการตอบสนอง ณ จุดเกิดเหตุหรือ Incident Command Post: ICP
+- SOC ต้องสื่อสารการประกาศใช้แผนและคำสั่งที่เกี่ยวข้องไปยังหน่วยงานตาม Notification Matrix ของแต่ละแผน
+- SOC และ DCC ทำหน้าที่เป็น Rear Command
 
-### Field IC
+## การสั่งการส่วนหน้าและส่วนหลัง (Field and Rear Command)
 
-- Exercises tactical command at the incident scene or ICP.
-- Coordinates with SOC and DCC.
-- Directs field resources according to the applicable SOP.
+### ผู้บัญชาการเหตุการณ์ภาคสนาม (Field IC)
 
-### DCC
+- สั่งการเชิง Tactical ณ จุดเกิดเหตุหรือ ICP
+- ประสานงานกับ SOC และ DCC
+- ควบคุมทรัพยากรภาคสนามตาม SOP ที่เกี่ยวข้อง
 
-- Holds formal authority for plan activation and status changes.
-- Provides strategic direction, management escalation and decision support.
+### District Command Center: DCC
 
-### SOC
+- มีอำนาจทางการในการประกาศใช้และเปลี่ยนสถานะแผน
+- ให้ Strategic Direction สนับสนุนการยกระดับต่อผู้บริหาร และสนับสนุนการตัดสินใจ
 
-- Provides CCTV and system intelligence.
-- Maintains communications and coordination.
-- Opens and updates Mozart Cases.
-- Records activation time, instructions, status changes and response outcomes.
-- Communicates with relevant stakeholders.
+### Security Operation Centre: SOC
 
-## IC Availability
+- สนับสนุนข้อมูลจาก CCTV และระบบที่เกี่ยวข้อง
+- รักษาการสื่อสารและการประสานงาน
+- เปิดและอัปเดต Mozart Case
+- บันทึกเวลาประกาศ คำสั่ง การเปลี่ยนสถานะ และผลการตอบสนอง
+- สื่อสารข้อมูลไปยังหน่วยงานที่เกี่ยวข้อง
 
-Under the current staffing arrangement, the IC position specified by each SOP is staffed every day and is expected to be available and reachable.
+## ความพร้อมของ IC (IC Availability)
 
-## Immediate Life Safety Response
+ภายใต้การจัดกำลังปัจจุบัน ตำแหน่ง IC ที่กำหนดในแต่ละ SOP มีผู้ปฏิบัติงานครบทุกวันและสามารถติดต่อได้
 
-IF:
+## การตอบสนองเพื่อความปลอดภัยทันที (Immediate Life Safety Response)
+
+หาก:
 
 - `life_safety_threat = true`
-- AND `formal_plan_activation = pending`
+- และ `formal_plan_activation = pending`
 
-THEN SOC MAY:
+SOC สามารถ:
 
-1. Notify and dispatch EOT and Security.
-2. Establish preliminary area control or cordoning.
-3. Advise people to maintain distance or avoid the affected area.
-4. Coordinate first aid.
-5. Apply preliminary Access Control measures.
-6. Open a Mozart Case and collect evidence.
+1. แจ้งและ Dispatch EOT/Security
+2. สั่งกั้นหรือควบคุมพื้นที่เบื้องต้น
+3. แนะนำให้บุคคลรักษาระยะห่างหรือหลีกเลี่ยงพื้นที่
+4. ประสานการปฐมพยาบาล
+5. ควบคุม Access เบื้องต้น
+6. เปิด Mozart Case และรวบรวมหลักฐาน
 
-## Mandatory Distinction
+## ข้อแตกต่างบังคับ (Mandatory Distinction)
 
-Immediate Life Safety Response is not formal plan activation.
+Immediate Life Safety Response ไม่ใช่การประกาศใช้แผนอย่างเป็นทางการ
 
-AI MUST NOT state that SOC formally activated an emergency plan unless DCC declaration is confirmed.
+AI ห้ามระบุว่า SOC ประกาศใช้แผนฉุกเฉิน เว้นแต่มีการยืนยันคำประกาศจาก DCC
 
-## Minimum Plan Activation Message
+## ข้อมูลขั้นต่ำในการประกาศแผน (Minimum Activation Message)
 
-SOC SHOULD communicate:
+SOC ควรสื่อสาร:
 
-- Plan name and response level
-- Incident time and location
-- Designated IC position or identity
-- ICP location when established
-- Required responding stakeholders
-- Primary communication channel
-- Initial instruction or required action
+- ชื่อแผนและระดับการตอบสนอง
+- เวลาและพื้นที่เกิดเหตุ
+- ตำแหน่งหรือชื่อของ Field IC
+- ตำแหน่ง ICP เมื่อจัดตั้งแล้ว
+- หน่วยงานที่ต้องตอบสนอง
+- ช่องทางสื่อสารหลัก
+- คำสั่งหรือการดำเนินการเบื้องต้น
 
-## Closure
+## การลดระดับและยุติแผน (Closure)
 
-- DCC MUST declare de-escalation, stand down or plan termination.
-- SOC MUST record the declaration time, authority and resulting status in Mozart or the applicable incident record.
+- DCC ต้องเป็นผู้ประกาศ De-escalation, Stand Down หรือยุติแผน
+- SOC ต้องบันทึกเวลา ผู้มีอำนาจประกาศ และสถานะผลลัพธ์ใน Mozart หรือ Incident Record ที่เกี่ยวข้อง
 
