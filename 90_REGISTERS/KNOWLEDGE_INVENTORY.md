@@ -36,6 +36,7 @@ sensitivity: internal
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-CTX-001 | บริบทส่วนบุคคลและกฎการใช้งาน | Wanmaka Promchoto | 2026-08-25 | Active | Sensitive Personal |
+| REG-TERM-001 | ทะเบียนคำศัพท์และคำควบคุม | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 | REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 | REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 
@@ -51,4 +52,3 @@ sensitivity: internal
 - Reports, HOTO and Communication Templates
 - Projects and Enhancement Portfolio
 - Full Source and Document Cross-reference Register
-

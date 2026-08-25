@@ -1,7 +1,7 @@
 ---
 kb_id: WK-OBK-MOZ-001
 title: "กฎหลักการบริหาร Mozart Case (Mozart Case Management Core Rules)"
-description: "กำหนดคำศัพท์ วงจร Normal และ Urgent Case บทบาท Operator/Supervisor และข้อจำกัดการใช้ข้อมูล Mozart"
+description: "กำหนดคำศัพท์ วงจร Normal และ Urgent Case บทบาท SOC Operator/SOC Supervisor และข้อจำกัดการใช้ข้อมูล Mozart"
 owner: "SOC"
 last_updated: 2026-08-25
 status: pending_validation
@@ -12,6 +12,7 @@ sensitivity: internal
 related_kb_ids:
   - WK-OBK-SOC-001
   - WK-OBK-CMD-001
+  - REG-TERM-001
 ---
 
 # กฎหลักการบริหาร Mozart Case (Mozart Case Management Core Rules)
@@ -33,16 +34,19 @@ related_kb_ids:
 - `Task Template`
 - `Findings / Resolution`
 - `Resolve Case`
+- `Close Case`
 
 Mozart เป็น Case Management System เมื่อกล่าวถึง Record ใน Mozart ห้ามแทนคำว่า `Case` ด้วย `Incident`
 
 ## วงจรปกติ (Normal Flow)
 
-`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิด Case → ประสานงาน → ติดตาม → บันทึก → Resolve Case`
+`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิด Case → ประสานงาน → ติดตาม → บันทึก Findings / Resolution → SOC Supervisor ตรวจสอบ → SOC Operator Resolve Case → SOC Supervisor Close Case`
 
 ## วงจรเร่งด่วน (Urgent Flow)
 
-`รับข้อมูล → เปิด Case เป็น Pending Verification → แจ้งหรือ Dispatch → ตรวจสอบ → ประเมินและจัดประเภท → ประสานงาน → ติดตาม → บันทึก → Resolve Case`
+`รับข้อมูล → เปิด Case ก่อน Verification → แจ้งหรือ Dispatch → ตรวจสอบ → ประเมินและจัดประเภท → ประสานงาน → ติดตาม → บันทึก Findings / Resolution → SOC Supervisor ตรวจสอบ → SOC Operator Resolve Case → SOC Supervisor Close Case`
+
+`Pending Verification` เป็นคำอธิบายช่วงหนึ่งของ Workflow ไม่ใช่ Mozart Case Status
 
 ## เกณฑ์ Urgent Case
 
@@ -57,9 +61,9 @@ Mozart เป็น Case Management System เมื่อกล่าวถึ�
 
 Urgency เป็นเงื่อนไขการตอบสนอง ห้ามใช้แทน CAT Classification
 
-## หน้าที่ Operator
+## หน้าที่ SOC Operator
 
-Operator ควร:
+SOC Operator ควร:
 
 - เลือก Event Type ให้ถูกต้อง
 - บันทึกเวลาและสถานที่อย่างแม่นยำ
@@ -67,11 +71,13 @@ Operator ควร:
 - ระบุผู้ตอบสนองและผู้รับผิดชอบ
 - ติดตามจนทราบ Findings การดำเนินการ และผลยุติ
 - แนบหลักฐานที่เกี่ยวข้อง
+- จัดทำ Findings / Resolution ให้ครบถ้วน
+- ดำเนินการ Resolve Case หลัง SOC Supervisor ตรวจสอบ
 - ยกระดับตามอำนาจและผลกระทบ
 
-## หน้าที่ Supervisor
+## หน้าที่ SOC Supervisor
 
-Supervisor ควรตรวจ:
+SOC Supervisor ควรตรวจ:
 
 - ความถูกต้องของ Event Type และ CAT
 - ความครบถ้วนของ Timeline
@@ -81,10 +87,18 @@ Supervisor ควรตรวจ:
 - Active Case และความเสี่ยงด้าน SLA
 - คุณภาพ Findings / Resolution
 - ความครบถ้วนของ Handover
+- ความครบถ้วนของข้อมูลก่อนให้ Operator ดำเนินการ Resolve Case
+- ดำเนินการ Close Case สำหรับ Security Case ทุกกรณีที่อยู่ภายใต้ SOC Workflow
 
 ## Security Case และ Maintenance Case
 
 AI ต้องแยก Security Case ออกจาก Maintenance Case
+
+Security Case อยู่ภายใต้ SOC Workflow เมื่อ Case ใช้ `Security Type` และถูกส่งให้ SOC รับผิดชอบ ไม่ว่าผู้เปิด Case จะเป็น SOC, BMO, Retail Operation หรือ Contact Centre
+
+Security Case ดังกล่าวต้องให้ SOC Operator ดำเนินการ Resolve Case หลัง SOC Supervisor ตรวจสอบ และให้ SOC Supervisor เป็นผู้ Close Case ทุกกรณี
+
+กฎนี้ไม่ให้อำนาจ SOC Supervisor ปิด Maintenance Case, Retail Case หรือ Case ของหน่วยงานอื่นที่ไม่ใช่ Security Case ภายใต้ SOC Workflow
 
 หากเหตุเดียวต้องใช้ทั้งสอง Case ต้องกำหนด Primary Owner, Linked Case Reference, ผู้รับผิดชอบการอัปเดต และเกณฑ์ปิด Case ตาม Workflow หรือ Task Template ที่เกี่ยวข้อง
 
@@ -95,10 +109,11 @@ AI ต้องแยก Security Case ออกจาก Maintenance Case
 ## ข้อจำกัดของ AI (AI Constraints)
 
 - ห้ามสร้าง Case No., Event Type, CAT หรือ Status ขึ้นเอง
+- ห้ามใช้ `Pending Verification` เป็น Mozart Case Status
 - ต้องแจ้งเมื่อยอดรวม Case หรือ Status ขัดแย้งกัน
 - ต้องแยกการเปิด Case ออกจากการประกาศใช้แผนฉุกเฉิน
+- ห้ามให้ SOC Supervisor ปิด Case ที่ไม่ใช่ Security Case ภายใต้ SOC Workflow
 
 ## สิ่งที่ต้องตรวจสอบต่อ (Pending Validation)
 
 ต้องตรวจเทียบกับ Mozart Master Data, Event Type Inventory, Task Template และ Classification/Escalation Matrix ฉบับล่าสุดก่อนเปลี่ยนสถานะเป็น `active`
-

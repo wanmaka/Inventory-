@@ -52,14 +52,21 @@ Repository มีสองเสาหลัก:
 
 ไฟล์ Governance และ Registers ที่ Root เป็นกลไกควบคุม ไม่ใช่เสาหลักเพิ่มเติม
 
+- [ธรรมาภิบาล AI (AI Governance)](00_AI_GOVERNANCE.md)
+- [โครงสร้างองค์ความรู้สำหรับ AI (AI-ready Knowledge Schema)](00_KB_SCHEMA.md)
+- [ทะเบียนคำศัพท์และคำควบคุม (Terminology Register)](90_REGISTERS/TERMINOLOGY_REGISTER.md)
+- [ทะเบียนองค์ความรู้ (Knowledge Inventory)](90_REGISTERS/KNOWLEDGE_INVENTORY.md)
+- [ทะเบียนการตัดสินใจ (Decision Log)](90_REGISTERS/DECISION_LOG.md)
+
 ## ลำดับการอ่านสำหรับ AI (AI Reading Order)
 
 1. `README.md`
 2. `00_AI_GOVERNANCE.md`
 3. `00_KB_SCHEMA.md`
-4. `90_REGISTERS/KNOWLEDGE_INVENTORY.md`
-5. อ่านเฉพาะ Domain และ Knowledge Item ที่เกี่ยวข้องกับคำถาม
-6. ตรวจ `90_REGISTERS/DECISION_LOG.md` เมื่อพบข้อมูลหลายเวอร์ชัน
+4. `90_REGISTERS/TERMINOLOGY_REGISTER.md`
+5. `90_REGISTERS/KNOWLEDGE_INVENTORY.md`
+6. อ่านเฉพาะ Domain และ Knowledge Item ที่เกี่ยวข้องกับคำถาม
+7. ตรวจ `90_REGISTERS/DECISION_LOG.md` เมื่อพบข้อมูลหลายเวอร์ชัน
 
 ## ลำดับอำนาจของแหล่งข้อมูล (Source Authority Order)
 
@@ -84,4 +91,3 @@ Repository นี้เป็น Public ตามการตัดสินใ�
 ## สถานะชุดข้อมูลตั้งต้น (Baseline Status)
 
 ข้อมูลที่ยังไม่ได้ตรวจเทียบกับเอกสาร Approved ต้องใช้สถานะ `draft`, `pending_validation` หรือ `active_update_required` ตามระดับความพร้อม ห้าม AI ยกระดับเป็น `active` เอง
-

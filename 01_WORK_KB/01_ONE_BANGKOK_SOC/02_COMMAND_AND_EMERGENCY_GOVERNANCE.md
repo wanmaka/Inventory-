@@ -1,7 +1,7 @@
 ---
 kb_id: WK-OBK-CMD-001
 title: "ธรรมาภิบาลการสั่งการและการตอบสนองเหตุฉุกเฉิน (Emergency Command and Immediate Response Governance)"
-description: "กำหนดอำนาจของ DCC, Field IC และ SOC รวมถึง Immediate Life Safety Response ก่อนการประกาศใช้แผนอย่างเป็นทางการ"
+description: "กำหนดอำนาจของ DCC, IC และ SOC รวมถึง Immediate Life Safety Response ก่อนการประกาศใช้แผนอย่างเป็นทางการ"
 owner: "DCC"
 last_updated: 2026-08-25
 status: active
@@ -12,40 +12,43 @@ sensitivity: internal
 applies_to:
   - DCC
   - SOC
-  - Field_IC
+  - IC
   - EOT
-  - Security
+  - SMT
+  - Security_Supervisor
+  - Security_Officer
 related_kb_ids:
   - WK-OBK-SOC-001
   - WK-OBK-MOZ-001
+  - REG-TERM-001
 ---
 
 # ธรรมาภิบาลการสั่งการและการตอบสนองเหตุฉุกเฉิน (Emergency Command and Immediate Response Governance)
 
 | รายการ | ข้อมูล |
 |---|---|
-| คำอธิบาย (Description) | อำนาจของ DCC, Field IC และ SOC รวมถึงการตอบสนองเพื่อความปลอดภัยก่อนประกาศใช้แผน |
+| คำอธิบาย (Description) | อำนาจของ DCC, IC และ SOC รวมถึงการตอบสนองเพื่อความปลอดภัยก่อนประกาศใช้แผน |
 | เจ้าของข้อมูล (Owner) | DCC |
 | อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## รูปแบบอำนาจ (Authority Model)
 
-- DCC ต้องเป็นผู้ประกาศใช้ ยกระดับ ลดระดับ Stand Down และยุติแผนฉุกเฉิน
-- SOP ของแต่ละแผนต้องกำหนดตำแหน่ง Field IC ไว้ล่วงหน้า
-- Field IC ต้องควบคุมและสั่งการการตอบสนอง ณ จุดเกิดเหตุหรือ Incident Command Post: ICP
+- DCC ต้องเป็นผู้ประกาศใช้ ยกระดับ ลดระดับ และ `Stand Down (ยุติแผน)` สำหรับแผนฉุกเฉิน
+- SOP ของแต่ละแผนต้องกำหนดตำแหน่ง IC ไว้ล่วงหน้า
+- IC ต้องควบคุมและสั่งการการตอบสนอง ณ จุดเกิดเหตุหรือ Incident Command Post: ICP
 - SOC ต้องสื่อสารการประกาศใช้แผนและคำสั่งที่เกี่ยวข้องไปยังหน่วยงานตาม Notification Matrix ของแต่ละแผน
 - SOC และ DCC ทำหน้าที่เป็น Rear Command
 
 ## การสั่งการส่วนหน้าและส่วนหลัง (Field and Rear Command)
 
-### ผู้บัญชาการเหตุการณ์ภาคสนาม (Field IC)
+### ผู้บัญชาการเหตุการณ์ (Incident Commander: IC)
 
 - สั่งการเชิง Tactical ณ จุดเกิดเหตุหรือ ICP
 - ประสานงานกับ SOC และ DCC
 - ควบคุมทรัพยากรภาคสนามตาม SOP ที่เกี่ยวข้อง
 
-### District Command Center: DCC
+### District Command Centre: DCC
 
 - มีอำนาจทางการในการประกาศใช้และเปลี่ยนสถานะแผน
 - ให้ Strategic Direction สนับสนุนการยกระดับต่อผู้บริหาร และสนับสนุนการตัดสินใจ
@@ -71,7 +74,7 @@ related_kb_ids:
 
 SOC สามารถ:
 
-1. แจ้งและ Dispatch EOT/Security
+1. แจ้งและ Dispatch EOT และ/หรือ Security Officer หรือ Security Supervisor ตาม SOP
 2. สั่งกั้นหรือควบคุมพื้นที่เบื้องต้น
 3. แนะนำให้บุคคลรักษาระยะห่างหรือหลีกเลี่ยงพื้นที่
 4. ประสานการปฐมพยาบาล
@@ -90,7 +93,7 @@ SOC ควรสื่อสาร:
 
 - ชื่อแผนและระดับการตอบสนอง
 - เวลาและพื้นที่เกิดเหตุ
-- ตำแหน่งหรือชื่อของ Field IC
+- ตำแหน่งหรือชื่อของ IC
 - ตำแหน่ง ICP เมื่อจัดตั้งแล้ว
 - หน่วยงานที่ต้องตอบสนอง
 - ช่องทางสื่อสารหลัก
@@ -98,6 +101,6 @@ SOC ควรสื่อสาร:
 
 ## การลดระดับและยุติแผน (Closure)
 
-- DCC ต้องเป็นผู้ประกาศ De-escalation, Stand Down หรือยุติแผน
+- DCC ต้องเป็นผู้ประกาศ De-escalation หรือ `Stand Down (ยุติแผน)`
 - SOC ต้องบันทึกเวลา ผู้มีอำนาจประกาศ และสถานะผลลัพธ์ใน Mozart หรือ Incident Record ที่เกี่ยวข้อง
-
+- Stand Down เป็นการยุติแผน ไม่ทำให้ Mozart Case, Recovery, After Action Review: AAR หรือ Corrective Action ปิดโดยอัตโนมัติ

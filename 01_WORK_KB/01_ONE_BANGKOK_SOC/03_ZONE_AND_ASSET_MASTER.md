@@ -9,6 +9,8 @@ domain: one_bangkok_soc
 knowledge_type: zone_profile
 source_authority: boss_confirmed
 sensitivity: internal
+related_kb_ids:
+  - REG-TERM-001
 ---
 
 # ทะเบียน Seat, Zone และ Asset ของ SOC (SOC Seat, Zone and Asset Master)
@@ -25,6 +27,12 @@ sensitivity: internal
 Zone Mapping นี้เป็นโครงล่าสุด ณ เดือนสิงหาคม 2026
 
 Seat Assignment และ Operational Status สามารถเปลี่ยนแปลงได้ ข้อมูลที่อ่อนไหวต่อเวลาต้องระบุวันที่มีผล
+
+## Common Infrastructure: CI
+
+CI เป็นตัวย่อทางการของ Common Infrastructure หมายถึงโครงสร้างพื้นฐานและพื้นที่ส่วนกลางที่สนับสนุนการดำเนินงานระดับโครงการ
+
+ในบริบทการจัด Seat หรือ Function ของ SOC ให้แยก `CI Security` และ `CI Traffic` ตามภารกิจด้านล่าง
 
 ## CI Security
 
@@ -178,4 +186,3 @@ SOC ต้องตรวจสอบ:
 ## เหตุผลที่ต้องอัปเดต (Update Requirement)
 
 ต้องตรวจสอบ Operational Status และ Operational Owner ของ Asset นอก Zone 2 รวมถึงการเปลี่ยนแปลง Future Asset ก่อนเปลี่ยนสถานะเป็น `active`
-

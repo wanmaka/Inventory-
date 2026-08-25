@@ -53,6 +53,18 @@ Metadata สี่รายการต่อไปนี้ต้องปร�
 - ใช้ภาษาอังกฤษกับคำเฉพาะ ชื่อระบบ ชื่อตำแหน่ง และ Controlled Value
 - การกล่าวถึงคำสำคัญครั้งแรกควรระบุชื่อเต็มและตัวย่อ
 - ห้ามแปลชื่อระบบหรือชื่อทางการจนความหมายเปลี่ยน
+- คำศัพท์มาตรฐาน Alias และคำที่ห้ามใช้ต้องอ้างอิง `REG-TERM-001`
+
+## สถานะการใช้คำ (Term Usage State)
+
+| ค่า | วิธีใช้ |
+|---|---|
+| `CANONICAL` | คำมาตรฐานที่ต้องใช้เป็นค่าเริ่มต้น |
+| `CONTEXT_ONLY` | ใช้เฉพาะบริบทที่กำหนด |
+| `DO_NOT_USE` | ห้ามใช้ในบริบทที่ระบุ |
+| `PENDING_VALIDATION` | ยังต้องตรวจสอบก่อนใช้เป็นข้อเท็จจริง |
+
+`Term Usage State` ใช้ควบคุมคำศัพท์ภายใน `REG-TERM-001` และไม่ใช่ `Operational Status` ของ Knowledge Item
 
 ## ค่า Domain
 
@@ -161,4 +173,4 @@ AI ห้ามใช้ Example, Historical Record หรือ Draft เสม
 - `BP-PRO-001` — Professional Profile ของ Boss
 - `GOV-AI-001` — AI Governance
 - `REG-DEC-001` — Decision Register
-
+- `REG-TERM-001` — Terminology Register

@@ -15,6 +15,7 @@ applies_to:
 related_kb_ids:
   - WK-OBK-CMD-001
   - WK-OBK-MOZ-001
+  - REG-TERM-001
 ---
 
 # รูปแบบการดำเนินงานของ SOC (SOC Operating Model)
@@ -34,7 +35,7 @@ SOC มีหน้าที่เฝ้าระวัง ตรวจสอบ
 
 ห้ามตีความ SOC ใน KB นี้ว่าเป็น Cybersecurity SOC
 
-DCC ในบริบท One Bangkok หมายถึง District Command Center
+DCC ในบริบท One Bangkok หมายถึง District Command Centre
 
 ## ช่องทางข้อมูลของ SOC (Operating Channels)
 
@@ -56,7 +57,7 @@ SOC รับและเชื่อมโยงข้อมูลจาก:
 
 ## วงจรการทำงานหลัก (Operating Lifecycle)
 
-`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิดหรืออัปเดต Case → ประสานงาน → ติดตาม → รวบรวมหลักฐาน → รายงาน → Resolve Case → ถอดบทเรียน`
+`รับข้อมูล → ตรวจสอบ → ประเมิน → เปิดหรืออัปเดต Case → ประสานงาน → ติดตาม → รวบรวมหลักฐาน → บันทึก Findings / Resolution → SOC Supervisor ตรวจสอบ → SOC Operator Resolve Case → SOC Supervisor Close Case → ถอดบทเรียน`
 
 เหตุเร่งด่วนสามารถใช้ลำดับการเปิด Case ที่แตกต่างออกไป โปรดดู `WK-OBK-MOZ-001`
 
@@ -87,6 +88,7 @@ SOC Operator เป็นผู้ปฏิบัติงานแนวหน�
 - ประสานหน่วยงานตอบสนองที่เกี่ยวข้อง
 - ติดตามจนทราบผู้รับงาน เวลาเข้าพื้นที่ Findings การดำเนินการ และผลยุติ
 - รวบรวมและแนบหลักฐานที่เหมาะสม
+- จัดทำ Findings / Resolution และดำเนินการ Resolve Case หลัง SOC Supervisor ตรวจสอบ
 - ยกระดับเหตุสำคัญ เหตุผลกระทบสูง เหตุที่ยังไม่ยืนยัน หรือเหตุเกินอำนาจ
 - ส่งมอบ Active Case ปัญหาระบบ และงานคงค้างให้ผลัดถัดไปครบถ้วน
 
@@ -102,6 +104,8 @@ SOC Supervisor ควบคุมภาพรวมของผลัดทั�
 - จัดสรรกำลังและจัดลำดับความสำคัญเมื่อเกิดหลายเหตุพร้อมกัน
 - ควบคุมความถูกต้องและความสอดคล้องของข้อมูลที่ออกจาก SOC
 - ติดตาม Active Case งานเกินกำหนด และความเสี่ยงด้าน SLA
+- ตรวจสอบความครบถ้วนก่อน Operator ดำเนินการ Resolve Case
+- ดำเนินการ Close Case สำหรับ Security Case ทุกกรณีที่อยู่ภายใต้ SOC Workflow
 - สอนงานและพัฒนา Operator
 - ควบคุมวินัยและมาตรฐานการปฏิบัติงาน
 - ทำหน้าที่ด้าน Command หรือ Coordination ตามอำนาจที่กำหนดใน SOP ที่เกี่ยวข้อง
@@ -110,6 +114,13 @@ SOC Supervisor ควบคุมภาพรวมของผลัดทั�
 
 - Operator รับผิดชอบความถูกต้องและความต่อเนื่องของเหตุหรือพื้นที่ที่ได้รับมอบหมาย
 - Supervisor รับผิดชอบคุณภาพภาพรวมของผลัด การจัดลำดับ การสนับสนุนการตัดสินใจ การจัดทรัพยากร และการยกระดับ
+
+## บทบาท Security ภาคสนาม (Field Security Roles)
+
+- Security Management Team: SMT บริหาร ควบคุม และประสานงานด้าน Security ครอบคลุม In-Building, Traffic และ Common Infrastructure
+- Security Officer ครอบคลุมเจ้าหน้าที่รักษาความปลอดภัยภาคสนามของ PCS และ G4S
+- Security Supervisor หมายถึงหัวหน้าชุดรักษาความปลอดภัย และต้องแยกจาก SOC Supervisor
+- ห้ามใช้คำว่า `Security` หรือ `Supervisor` เป็นผู้รับผิดชอบโดยไม่ระบุตำแหน่ง เมื่อความหมายมีผลต่อการสั่งการหรือ Workflow
 
 ## เวลาปฏิบัติงาน (Operating Hours)
 
@@ -128,4 +139,3 @@ SOC Supervisor ควบคุมภาพรวมของผลัดทั�
 ## สิ่งที่ต้องตรวจสอบต่อ (Pending Validation)
 
 เนื้อหานี้ต้องตรวจเทียบกับ Core SOC Master Framework, Authority Matrix และ SOP/WI ฉบับ Approved ก่อนเปลี่ยนสถานะเป็น `active`
-

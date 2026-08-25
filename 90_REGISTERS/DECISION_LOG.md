@@ -49,7 +49,8 @@ sensitivity: internal
 
 ### DEC-20260825-006 — อำนาจประกาศแผนฉุกเฉิน
 
-- สถานะ: Approved
+- สถานะ: Superseded
+- แทนที่โดย: DEC-20260825-016
 - Decision: DCC ประกาศใช้ ยกระดับ ลดระดับ Stand Down และยุติแผน แต่ละ SOP กำหนด Field IC ล่วงหน้า Field IC สั่งการหน้างาน และ SOC สื่อสารไปยังหน่วยงานที่เกี่ยวข้อง
 
 ### DEC-20260825-007 — Immediate SOC Protective Actions
@@ -97,9 +98,28 @@ sensitivity: internal
 - สถานะ: Approved
 - Decision: ลบ Working Tree เดิมและแทนที่ด้วย KB ชุดใหม่ที่เป็นภาษาไทยเป็นหลักและใช้ Metadata/Status มาตรฐาน โดยคง Git History เพื่อการตรวจสอบย้อนหลัง
 
+### DEC-20260825-016 — คำมาตรฐานด้านการสั่งการเหตุฉุกเฉิน
+
+- สถานะ: Approved
+- Decision: ใช้ชื่อทางการ `Security Operation Centre: SOC` และ `District Command Centre: DCC` ใช้ `IC` เป็นคำมาตรฐานแทน `Field IC` โดย IC สั่งการ ณ จุดเกิดเหตุหรือ ICP และใช้ `Stand Down (ยุติแผน)` เป็นความหมายเดียวกับการยุติแผน
+
+### DEC-20260825-017 — การ Resolve และ Close Security Case
+
+- สถานะ: Approved
+- Decision: ใช้ `Case No.` เป็นคำมาตรฐาน และ `Pending Verification` เป็นคำอธิบาย Workflow ไม่ใช่ System Status โดย SOC Operator ดำเนินการ Resolve Case หลัง SOC Supervisor ตรวจสอบ และ SOC Supervisor เป็นผู้ Close Security Case ทุกกรณีที่อยู่ภายใต้ SOC Workflow รวมถึง Case ที่ BMO, Retail Operation หรือ Contact Centre เปิดด้วย `Security Type` และส่งให้ SOC รับผิดชอบ
+
+### DEC-20260825-018 — บทบาท Security และ Common Infrastructure
+
+- สถานะ: Approved
+- Decision: SMT หมายถึง Security Management Team ซึ่งบริหารและควบคุม Security ครอบคลุม In-Building, Traffic และ Common Infrastructure; Security Officer ครอบคลุมเจ้าหน้าที่ PCS และ G4S; Security Supervisor หมายถึงหัวหน้าชุดรักษาความปลอดภัย และ CI มีชื่อเต็มทางการว่า Common Infrastructure
+
+### DEC-20260825-019 — Terminology Register
+
+- สถานะ: Approved
+- Decision: กำหนด `REG-TERM-001` เป็นแหล่งอ้างอิงกลางสำหรับ Canonical Term, Alias, คำที่ห้ามใช้ และคำที่รอตรวจสอบ โดย AI และเอกสารใหม่ต้องใช้ Canonical Term ตามทะเบียน
+
 ## กฎการจัดการ Decision (Decision Handling Rule)
 
 AI ต้องรักษา Approved Decision จนกว่า Boss จะเปลี่ยนหรือ Supersede
 
 เมื่อ Decision เปลี่ยน ต้องสร้าง Decision ID ใหม่และกำหนด Decision เดิมเป็น `Superseded` ห้ามแก้ประวัติย้อนหลังโดยไม่มีร่องรอย
-

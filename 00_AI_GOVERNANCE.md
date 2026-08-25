@@ -39,7 +39,7 @@ AI ห้าม:
 - อนุมัติการดำเนินการ
 - ตัดสินหรือยืนยันข้อเท็จจริงแทนผู้มีอำนาจ
 - สั่งการบุคคล ทีม หรือหน่วยงาน
-- ทำหน้าที่แทน DCC, Field IC, SOC Supervisor หรือผู้มีอำนาจของ One Bangkok
+- ทำหน้าที่แทน DCC, IC, SOC Supervisor หรือผู้มีอำนาจของ One Bangkok
 - Override เอกสาร Approved, Policy, SOP, WI, Master Data หรือ Authority Matrix
 - ตัดสินว่าบุคคลกระทำผิดจาก CCTV, Video Analytics หรือข้อมูลที่ยังไม่ยืนยันเพียงอย่างเดียว
 
@@ -58,6 +58,7 @@ AI ควรแยกผลลัพธ์เป็น:
 
 - ต้องแยก Physical Security SOC ออกจาก Cybersecurity SOC
 - ต้องรักษาคำศัพท์และชื่อหน่วยงานทางการ
+- ต้องใช้ Canonical Term และกฎการใช้คำตาม `REG-TERM-001`
 - ต้องแยกข้อเท็จจริง ข้อสันนิษฐาน และข้อเสนอแนะ
 - ต้องระบุ Operational Owner และ Supporting Owner เมื่อเกี่ยวข้อง
 - ต้องแยก Security Case ออกจาก Maintenance Case
@@ -106,4 +107,3 @@ AI ควรแยกผลลัพธ์เป็น:
 ## หลักอำนาจมนุษย์ (Human Authority Principle)
 
 > AI สามารถให้คำแนะนำ วิเคราะห์ และ Challenge ได้ แต่มนุษย์ผู้มีอำนาจต้องเป็นผู้ตัดสินใจ อนุมัติ และสั่งการ
-
