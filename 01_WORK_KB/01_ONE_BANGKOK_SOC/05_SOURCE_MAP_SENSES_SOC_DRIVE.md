@@ -1,13 +1,13 @@
 ---
 kb_id: WK-OBK-SRC-001
 title: "แผนที่แหล่งข้อมูล _SENSES SOC Google Drive (_SENSES SOC Drive Source Map)"
-description: "ทะเบียนแหล่งข้อมูลและโครงสร้างโฟลเดอร์หลักของ Shared Drive _SENSES SOC ที่ใช้เป็น Source of Truth สำหรับการดึงและตรวจสอบข้อมูลของ One Bangkok SOC Knowledge Base"
+description: "กำหนด Shared Drive _SENSES SOC เป็น Source of Truth และบันทึกโครงสร้างหลักสำหรับการนำข้อมูลเข้าสู่ One Bangkok SOC Master Knowledge Base"
 owner: "SOC"
-last_updated: 2026-08-28
+last_updated: 2026-08-29
 status: active
 domain: one_bangkok_soc
 knowledge_type: index
-source_authority: current_operational_practice
+source_authority: boss_confirmed
 sensitivity: internal
 ---
 
@@ -15,31 +15,73 @@ sensitivity: internal
 
 | รายการ | ข้อมูล |
 |---|---|
-| คำอธิบาย (Description) | แผนที่แหล่งข้อมูล Shared Drive `_SENSES SOC` สำหรับใช้ค้นหา ตรวจสอบ และนำข้อมูลเข้าสู่ Master Knowledge Base |
+| คำอธิบาย (Description) | Source Map ของ Shared Drive `_SENSES SOC` สำหรับค้นหา ตรวจสอบ และนำข้อมูลเข้าสู่ Master KB |
 | เจ้าของข้อมูล (Owner) | SOC |
-| อัปเดตล่าสุด (Last Updated) | 28 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 29 สิงหาคม 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
-## หลักการใช้งาน
+## Canonical Source
 
-- Shared Drive `_SENSES SOC` เป็นแหล่งข้อมูลอ้างอิงหลักสำหรับเอกสารปฏิบัติงานของ SOC ที่สามารถเข้าถึงได้ผ่าน Google Drive connector
-- เมื่อนำข้อมูลจาก Drive เข้า KB ต้องตรวจสอบ Revision, Status และประเภทเอกสารก่อนใช้งาน
-- ลำดับความน่าเชื่อถือของเอกสาร SOP ใช้หลัก: Approved/Current Revision > Previous Revision > Draft
-- Draft, Historical Record หรือ Example ห้ามถูกตีความเป็น Approved Operational Rule
-- หากข้อมูลใน Drive ขัดกับ Existing KB ต้องทำ Gap/Conflict Review ก่อนแก้ไข Knowledge Item เดิม
+- Shared Drive: `_SENSES SOC`
+- Google Shared Drive ID: `0AJpAwl9n5sLbUk9PVA`
+- Root Structure ที่ยืนยันจาก Shared Drive โดยตรง:
+  1. `SOC Management`
+  2. `SOC Team`
+- โฟลเดอร์ Shared/Transferred รุ่นก่อนที่มีชื่อ `SOC One Bangkok` หรือ `SOC Management One Bangkok` ให้ถือเป็น Secondary/Legacy Source เมื่อมีข้อมูลซ้ำกับ Canonical Shared Drive
 
-## โครงสร้างหลัก: SOC One Bangkok
+## 1. SOC Management
+
+โครงสร้างหลักที่ยืนยัน:
+
+1. `01. Task`
+2. `02. Work Schedule`
+3. `03. Report`
+4. `04. Project`
+5. `05. Procurement`
+6. `06. Document Control`
+7. `x. Performance Evaluation - SOC`
+
+### Source สำคัญที่พบ
+
+- `Task Management ล่าสุด` — Native Google Sheet
+- `OBK SOC Operator Work Schedule 2026`
+- `OBK SOC-Management Work Schedule 2026`
+- `OBK SOC Work Schedule 2026.xlsx`
+- Project Domains: CCTV, Mozart, Virtual Patrol, Guard Tour, SOC Task, SOC KPI, Seating Plan, Video Analytics, ISO, Security Manning Post Check, Incident Command Station
+- Performance Evaluation Library: Announcement, Blueprint, Rubric, Marking Guide/Key, Interview Guide, Score Card, Assessment Record, Exam Paper และ Scoring Spreadsheet
+
+## 2. SOC Team
+
+โครงสร้างหลักที่ยืนยัน:
 
 1. `01. SOC Documents`
 2. `02. Standard Operation Procedure (SOP)`
 3. `03. Training`
-4. `04. CCTV Record and Tracking`
+4. `04. CCTV Document and Tracking`
 5. `05. Operator Task`
 6. `06. Activity Picture`
+7. `ตรวจสอบ CCTV ประจำ Week ของ Operation.xlsx`
 
-## SOP Source Structure
+### 2.1 SOC Documents
 
-ภายใต้ `02. Standard Operation Procedure (SOP)` พบโครงสร้างหลัก:
+พบ Domain หลัก:
+
+- SOC Staff Information
+- Announcement
+- Mozart
+- Guard Tour
+- Virtual Patrol
+- Blacklist / Whitelist / Watchlist
+- Video Analytic
+- OBK Layout
+- CCTV
+- Event
+- Work Schedule
+- Other / Supporting Information
+
+### 2.2 Standard Operation Procedure (SOP)
+
+โครงสร้าง:
 
 - `01. Visio Swimlane`
 - `02. PDF Swimlane`
@@ -48,66 +90,75 @@ sensitivity: internal
 - `คำศัพท์ประจำแผนก.xlsx`
 - `การส่ง Email ประกาศบังคับใช้ SOP.xlsx`
 
-ภายใต้ `03. SOP Document` พบการแบ่ง Revision:
+`03. SOP Document` แบ่งเป็น:
 
 - `00. Draft`
 - `01. Rev.00`
 - `02. Rev.01`
 
-ภายใต้ `02. Rev.01` พบอย่างน้อย:
+Current Rev.01 ที่ยืนยันใน Drive:
 
-- `01.Emergency Plan (EP)`
-- `05.DCC`
+- `OB_SOP_EP_0036 แผนการปฏิบัติการฉุกเฉินกรณีเหตุกราดยิง Rev.01 (Signed).pdf`
+- `OB-SOP-DCC-0002 - BCP - Mozart Down - RV.01 - signed.pdf`
 
-## Training Source Structure
+### 2.3 Training
 
-ภายใต้ `03. Training` พบ:
+- OJT Training
+- General Training
+- FCC Training
+- Examination
+- Training Record
+- SOC Weekly Training
 
-1. `01. OJT Training`
-2. `02. General Training`
-3. `03. FCC Training`
-4. `04. Examination`
-5. `05. Training Record`
-6. `06. SOC Weekly Training`
+### 2.4 CCTV Document and Tracking
 
-## CCTV Source Structure
+- Tracking
+- CCTV Request Form
+- Form
+- CCTV Record
 
-ภายใต้ `04. CCTV Record and Tracking` พบ:
+### 2.5 Operator Task
 
-- `01. Tracking`
-- `02. CCTV Record`
+- CI Traffic
+- Zone 1
+- Zone 2
+- Compound
+- Summary
+- CCTV Offline Checklist
 
-## โครงสร้างหลัก: SOC Management One Bangkok
+### 2.6 Activity Picture
 
-1. `01. Task`
-2. `02. Work Schedule`
-3. `03. Report`
-4. `04. Project`
-5. `05. Procurement`
-6. `06. Document Control`
-7. `Project Sun`
-8. `Calendar May - Jun`
+- 2025
+- 2026
 
-## Import Priority
+## Source Authority Rule
 
-1. SOP / Emergency Plan / Swimlane / Definitions
-2. SOC Documents / WI / Guideline / Forms
-3. CCTV / Camera / Tracking / Qognify-related data
-4. Training / Examination / OJT / Weekly Training
-5. Mozart / Operator Task / Guard Tour / Operational Workflow
-6. Project / Report / Document Control / Work Schedule
-7. Activity Picture / Historical Record ใช้เป็น Supporting Reference
+ลำดับการใช้แหล่งข้อมูล:
 
-## ข้อจำกัดของ AI
+1. Signed/Approved + Current Revision
+2. Approved Master Data / Current Controlled Record
+3. Current Operational Practice
+4. Previous Revision / Historical Record
+5. Draft / Working File
 
-- AI ต้องไม่เดาว่าไฟล์ใดเป็น Current/Approved หากชื่อไฟล์หรือ Revision ไม่เพียงพอที่จะยืนยัน
-- AI ต้องตรวจสอบเอกสารฉบับล่าสุดและสถานะก่อนใช้เป็นข้อกำหนดปฏิบัติงาน
-- ไฟล์ที่เปลี่ยนแปลงบ่อยควรอ้างอิงจาก Drive ล่าสุดแทนการบันทึกรายละเอียดคงที่ใน KB
-- ข้อมูลที่มีความละเอียดอ่อนหรือจำกัดสิทธิ์ต้องคงระดับ `internal` หรือสูงกว่าตาม Source Document
+ห้ามใช้ Draft, Historical Record หรือ Example เสมือนเป็น Approved Operational Rule
 
-## แหล่งข้อมูล
+## Public Repository Data Handling
 
-- Google Shared Drive: `_SENSES SOC`
-- Folder: `SOC One Bangkok`
-- Folder: `SOC Management One Bangkok`
-- Verified via connected Google Drive access on 28 August 2026
+Inventory Repository เป็น Public จึงใช้หลักดังนี้:
+
+- **นำเข้าเป็น Knowledge:** กฎ กระบวนการ Definition Workflow Template Structure Lessons Learned และข้อมูลที่เหมาะสมสำหรับเผยแพร่ใน KB
+- **นำเข้าเป็น Reference Only:** ข้อมูลที่จำเป็นต่อการค้นคืนแต่ไม่ควรทำซ้ำใน Public Repository
+- **ห้ามคัดลอก Raw Sensitive Data ลง Public Repository:** Credential, Password, Blacklist/Whitelist identity, ทะเบียนรถ, PII, CCTV Evidence, ภาพบุคคล/เหตุการณ์, รายละเอียดเชิงกายภาพหรือ Security Configuration ที่เพิ่มความเสี่ยง, Individual Performance/HR Record และข้อมูลจำกัดสิทธิ์อื่น
+- ข้อมูลกลุ่ม Restricted ให้เก็บ `Source Title + Drive File/Folder ID + Classification + Purpose` เพื่อให้ AI กลับไปอ่าน Source ที่ได้รับอนุญาตเมื่อจำเป็น
+
+## Import Scope
+
+ตาม `DEC-20260829-001` ขอบเขตการนำเข้าครอบคลุม **ทุก Domain ที่เข้าถึงได้ใน `_SENSES SOC`** โดยไม่จำกัดเฉพาะ SOP ได้แก่ Operations, Systems, CCTV, Mozart, Guard Tour, Virtual Patrol, Training, Assessment, Security Awareness, Reports, HOTO, Projects, ISO, Events, Staff/Workforce Reference, Performance Evaluation, Forms, Records และ Supporting Documents
+
+## Source Maintenance Rule
+
+- Drive เป็น Source of Truth สำหรับ Raw Source และข้อมูลที่เปลี่ยนบ่อย
+- KB เป็น Source of Truth สำหรับ Canonical Knowledge ที่ผ่านการ Validation
+- เมื่อพบข้อมูลขัดกัน ต้องเปรียบเทียบ Revision/Approval/Modified Date/Document Control ก่อนอัปเดต KB
+- AI ต้องระบุ `UNKNOWN` หาก Source ไม่เพียงพอ และห้ามเติมข้อมูลจากการเดา
