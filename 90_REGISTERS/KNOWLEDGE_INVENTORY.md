@@ -34,6 +34,7 @@ sensitivity: internal
 | WK-OBK-MOZ-001 | กฎหลักการบริหาร Mozart Case | SOC | 2026-08-25 | Pending Validation | Internal |
 | WK-OBK-SRC-001 | แผนที่แหล่งข้อมูล _SENSES SOC Google Drive | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
+| WK-OBK-SWL-001 | คลัง Swimlane ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-BIZ-GF-001 | องค์ความรู้ธุรกิจส่วนตัว | Wanmaka Promchoto | 2026-08-25 | Draft | General Personal |
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
@@ -45,7 +46,7 @@ sensitivity: internal
 ## สถานะการนำเข้าเพิ่มเติม (Import Status)
 
 - [x] Full SOP and WI Document Register — Initial source register imported from `_SENSES SOC` on 2026-08-28
-- [ ] Swimlane Library
+- [x] Swimlane Library — PDF source library imported from `_SENSES SOC` on 2026-08-28; Visio and version validation remain pending
 - [ ] Complete Mozart Event Type and Task Template Master
 - [ ] CCTV Master Knowledge Base and Qognify User Guidelines
 - [ ] Training and Assessment Library
