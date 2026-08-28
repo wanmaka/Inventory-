@@ -33,6 +33,7 @@ sensitivity: internal
 | WK-OBK-ZONE-001 | ทะเบียน Seat, Zone และ Asset ของ SOC | SOC | 2026-08-25 | Active—Update Required | Internal |
 | WK-OBK-MOZ-001 | กฎหลักการบริหาร Mozart Case | SOC | 2026-08-25 | Pending Validation | Internal |
 | WK-OBK-SRC-001 | แผนที่แหล่งข้อมูล _SENSES SOC Google Drive | SOC | 2026-08-28 | Active | Internal |
+| WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-BIZ-GF-001 | องค์ความรู้ธุรกิจส่วนตัว | Wanmaka Promchoto | 2026-08-25 | Draft | General Personal |
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
@@ -41,15 +42,17 @@ sensitivity: internal
 | REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-28 | Active | Internal |
 | REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 
-## พื้นที่ที่ต้องนำเข้าเพิ่มเติม (Planned Import Areas)
+## สถานะการนำเข้าเพิ่มเติม (Import Status)
 
-- Full SOP and WI Document Register
-- Swimlane Library
-- Complete Mozart Event Type and Task Template Master
-- CCTV Master Knowledge Base and Qognify User Guidelines
-- Training and Assessment Library
-- Security Awareness Library
-- TTX, GDX and AAR Library
-- Reports, HOTO and Communication Templates
-- Projects and Enhancement Portfolio
-- Full Source and Document Cross-reference Register
+- [x] Full SOP and WI Document Register — Initial source register imported from `_SENSES SOC` on 2026-08-28
+- [ ] Swimlane Library
+- [ ] Complete Mozart Event Type and Task Template Master
+- [ ] CCTV Master Knowledge Base and Qognify User Guidelines
+- [ ] Training and Assessment Library
+- [ ] Security Awareness Library
+- [ ] TTX, GDX and AAR Library
+- [ ] Reports, HOTO and Communication Templates
+- [ ] Projects and Enhancement Portfolio
+- [ ] Full Source and Document Cross-reference Register
+
+> หมายเหตุ: `WK-OBK-SOP-001` เป็น Document Register ระดับ Source Index แล้ว การ Extract เนื้อหาภายในแต่ละ SOP/WI และการยืนยัน Current Revision/Approval Status ยังดำเนินต่อเป็น Phase ถัดไป
