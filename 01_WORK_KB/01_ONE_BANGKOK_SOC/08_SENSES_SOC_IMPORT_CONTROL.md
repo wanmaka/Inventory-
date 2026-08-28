@@ -60,7 +60,7 @@ Boss อนุญาตให้นำองค์ความรู้และ
 | Mozart Event/Task Source Master | `WK-OBK-MOZ-SRC-001` | Active — current source hierarchy and master candidate indexed |
 | Mozart Canonical Rules | `WK-OBK-MOZ-001` | Pending Validation / extraction continues |
 | CCTV Master | Planned Atomic KB | In Progress — source hierarchy indexed in `REG-SRC-001` / `WK-OBK-SRCINV-001` |
-| Guard Tour | Planned Atomic KB | In Progress — current source folders indexed; canonical process extraction pending |
+| Guard Tour | `WK-OBK-GT-001` | Active — canonical annual record inspected; Plan/Actual/Percentage and sanitized work categories imported; detailed workflow/control semantics remain `PENDING_VALIDATION` |
 | Virtual Patrol | Planned Atomic KB | In Progress — current source folders indexed; canonical process extraction pending |
 | Blacklist / Whitelist / Watchlist | Planned Restricted Reference | In Progress — raw identity data remains Drive-only |
 | Video Analytic | Planned Atomic KB | In Progress — current source folder indexed; policy/use-case extraction pending |
