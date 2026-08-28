@@ -3,7 +3,7 @@ kb_id: REG-INV-001
 title: "ทะเบียนองค์ความรู้ (Knowledge Inventory Register)"
 description: "ทะเบียนกลางสำหรับตรวจสอบ KB ID, Domain, Owner, Last Updated, Status และ Sensitivity ของทุก Knowledge Item"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-08-25
+last_updated: 2026-08-28
 status: active
 domain: register
 knowledge_type: index
@@ -17,7 +17,7 @@ sensitivity: internal
 |---|---|
 | คำอธิบาย (Description) | ทะเบียนกลางสำหรับตรวจสอบ Metadata และสถานะของทุก Knowledge Item |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 28 สิงหาคม 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## รายการ Knowledge Item
@@ -32,12 +32,13 @@ sensitivity: internal
 | WK-OBK-CMD-001 | ธรรมาภิบาลการสั่งการและการตอบสนองเหตุฉุกเฉิน | DCC | 2026-08-25 | Active | Internal |
 | WK-OBK-ZONE-001 | ทะเบียน Seat, Zone และ Asset ของ SOC | SOC | 2026-08-25 | Active—Update Required | Internal |
 | WK-OBK-MOZ-001 | กฎหลักการบริหาร Mozart Case | SOC | 2026-08-25 | Pending Validation | Internal |
+| WK-OBK-SRC-001 | แผนที่แหล่งข้อมูล _SENSES SOC Google Drive | SOC | 2026-08-28 | Active | Internal |
 | WK-BIZ-GF-001 | องค์ความรู้ธุรกิจส่วนตัว | Wanmaka Promchoto | 2026-08-25 | Draft | General Personal |
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-CTX-001 | บริบทส่วนบุคคลและกฎการใช้งาน | Wanmaka Promchoto | 2026-08-25 | Active | Sensitive Personal |
 | REG-TERM-001 | ทะเบียนคำศัพท์และคำควบคุม | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
-| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
+| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-28 | Active | Internal |
 | REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 
 ## พื้นที่ที่ต้องนำเข้าเพิ่มเติม (Planned Import Areas)
