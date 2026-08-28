@@ -36,6 +36,7 @@ sensitivity: internal
 | WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-SWL-001 | คลัง Swimlane ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-IMP-001 | ทะเบียนควบคุมการนำเข้า _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
+| WK-OBK-SRCINV-001 | ทะเบียน Source Inventory _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-OBK-TASK-001 | กรอบการบริหาร Task ของ SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-OBK-TRN-001 | คลังการฝึกอบรมและการประเมิน SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-OBK-DOC-001 | ทะเบียนเอกสารปฏิบัติงาน SOC | SOC | 2026-08-29 | Active | Internal |
@@ -56,6 +57,7 @@ sensitivity: internal
 
 - [x] Canonical `_SENSES SOC` Shared Drive identified — Drive ID `0AJpAwl9n5sLbUk9PVA`; root = `SOC Management` + `SOC Team`
 - [x] Source Map / Shared Drive Structure — `WK-OBK-SRC-001`
+- [x] Source Inventory Register — `WK-OBK-SRCINV-001`; canonical workstream/folder IDs indexed
 - [x] Import Control / Safety Boundary — `WK-OBK-IMP-001`
 - [x] Full Source & Document Cross-reference Register — `REG-SRC-001` established; recursive expansion remains a living process
 - [x] SOP/WI Document Register — `WK-OBK-SOP-001`; content extraction/revision validation continues
