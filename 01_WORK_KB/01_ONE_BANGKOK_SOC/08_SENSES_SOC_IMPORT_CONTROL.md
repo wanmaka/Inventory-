@@ -49,6 +49,7 @@ Boss อนุญาตให้นำองค์ความรู้และ
 | Workstream | KB / Register | Status |
 |---|---|---|
 | Canonical Source Map | `WK-OBK-SRC-001` | Active — exact Shared Drive root confirmed |
+| Source Inventory Register | `WK-OBK-SRCINV-001` | Active — root, workstream and canonical folder IDs indexed |
 | Full Source Cross-reference | `REG-SRC-001` | Active — root/domain/current key sources indexed; recursive expansion continues |
 | SOP/WI Register | `WK-OBK-SOP-001` | Active — document register imported; content/revision validation continues |
 | Swimlane Library | `WK-OBK-SWL-001` | Active — PDF library imported; exact current Visio/PDF validation continues |
@@ -58,17 +59,27 @@ Boss อนุญาตให้นำองค์ความรู้และ
 | Performance Evaluation | `WK-OBK-PE-001` | Active — source library imported; individual records restricted |
 | Mozart Event/Task Source Master | `WK-OBK-MOZ-SRC-001` | Active — current source hierarchy and master candidate indexed |
 | Mozart Canonical Rules | `WK-OBK-MOZ-001` | Pending Validation / extraction continues |
-| CCTV Master | Planned Atomic KB | In Progress — source hierarchy indexed in `REG-SRC-001` |
-| Guard Tour | Planned Atomic KB | In Progress — 2025/2026 records and monthly 2026 sources located |
-| Virtual Patrol | Planned Atomic KB | In Progress — 2025/2026 record sources located |
+| CCTV Master | Planned Atomic KB | In Progress — source hierarchy indexed in `REG-SRC-001` / `WK-OBK-SRCINV-001` |
+| Guard Tour | Planned Atomic KB | In Progress — current source folders indexed; canonical process extraction pending |
+| Virtual Patrol | Planned Atomic KB | In Progress — current source folders indexed; canonical process extraction pending |
+| Blacklist / Whitelist / Watchlist | Planned Restricted Reference | In Progress — raw identity data remains Drive-only |
+| Video Analytic | Planned Atomic KB | In Progress — current source folder indexed; policy/use-case extraction pending |
+| OBK Layout | Planned Sanitized Reference | In Progress — source indexed; sensitive layout detail remains Drive-only |
 | Security Awareness | Planned Library | In Progress — source discovery/validation required in canonical drive |
 | Exercise Library | Planned Library | In Progress — TTX/GDX/AAR sources to be crawled from current drive |
 | Reports & HOTO | Planned Library | In Progress — source discovery/validation required |
 | Projects & Enhancement | Planned Portfolio | In Progress — Management Project domains indexed |
+| ISO / Audit | Planned Library | In Progress — source domain identified; deep extraction pending |
+| SOC KPI / Expert Point | Planned Management Reference | In Progress — source domain identified; sanitized management knowledge only |
+| Security Manning Post Check | Planned Operational Reference | In Progress — source domain identified |
+| Seating Plan | Planned Restricted Reference | In Progress — source domain identified; sensitive layout/staff mapping not copied raw |
+| Incident Command Station | Planned Project Reference | In Progress — source domain identified |
 | Document Control | Planned Library | In Progress — canonical folder currently empty; SOP control sources exist elsewhere |
 | Operator Task | Planned Library | In Progress — CI Traffic, Zone 1, Zone 2, Compound, Summary and CCTV Offline Checklist located |
 | CCTV Record/Tracking | Planned Library | In Progress — Tracking/Request/Form/Record hierarchy indexed; raw evidence restricted |
-| Activity Picture | Reference Index | In Progress — 2025/2026 folders located; raw images remain Drive-only |
+| Event Library | Planned Library | In Progress — current source folder indexed; content extraction pending |
+| Work Schedule / Workforce | Planned Restricted Reference | In Progress — staffing-model knowledge only in Public Repository |
+| Activity Picture | Reference Index | In Progress — raw images remain Drive-only |
 
 ## Import Procedure
 
@@ -102,6 +113,15 @@ Boss อนุญาตให้นำองค์ความรู้และ
 - Operator Task
 - Activity Picture
 - Weekly CCTV Operation Check
+
+## Completion Gate
+
+Full import is considered complete only when all authorized workstreams are either:
+
+- represented by an active Knowledge Item with source cross-reference; or
+- explicitly classified as metadata/reference-only due to sensitivity, evidence retention, history or repository-safety constraints;
+
+and there are no remaining `Pending Import`, `In Progress`, `Pending Validation`, unresolved current-revision conflicts or uncategorized canonical sources.
 
 ## Change Control
 
