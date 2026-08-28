@@ -3,7 +3,7 @@ kb_id: REG-INV-001
 title: "ทะเบียนองค์ความรู้ (Knowledge Inventory Register)"
 description: "ทะเบียนกลางสำหรับตรวจสอบ KB ID, Domain, Owner, Last Updated, Status และ Sensitivity ของทุก Knowledge Item"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-08-28
+last_updated: 2026-08-29
 status: active
 domain: register
 knowledge_type: index
@@ -17,7 +17,7 @@ sensitivity: internal
 |---|---|
 | คำอธิบาย (Description) | ทะเบียนกลางสำหรับตรวจสอบ Metadata และสถานะของทุก Knowledge Item |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 28 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 29 สิงหาคม 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## รายการ Knowledge Item
@@ -35,25 +35,34 @@ sensitivity: internal
 | WK-OBK-SRC-001 | แผนที่แหล่งข้อมูล _SENSES SOC Google Drive | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-SWL-001 | คลัง Swimlane ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
+| WK-OBK-IMP-001 | ทะเบียนควบคุมการนำเข้า _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-BIZ-GF-001 | องค์ความรู้ธุรกิจส่วนตัว | Wanmaka Promchoto | 2026-08-25 | Draft | General Personal |
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-CTX-001 | บริบทส่วนบุคคลและกฎการใช้งาน | Wanmaka Promchoto | 2026-08-25 | Active | Sensitive Personal |
 | REG-TERM-001 | ทะเบียนคำศัพท์และคำควบคุม | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
-| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-28 | Active | Internal |
-| REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
+| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-29 | Active | Internal |
+| REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-29 | Active | Internal |
 
 ## สถานะการนำเข้าเพิ่มเติม (Import Status)
 
-- [x] Full SOP and WI Document Register — Initial source register imported from `_SENSES SOC` on 2026-08-28
-- [x] Swimlane Library — PDF source library imported from `_SENSES SOC` on 2026-08-28; Visio and version validation remain pending
-- [ ] Complete Mozart Event Type and Task Template Master
-- [ ] CCTV Master Knowledge Base and Qognify User Guidelines
-- [ ] Training and Assessment Library
-- [ ] Security Awareness Library
-- [ ] TTX, GDX and AAR Library
-- [ ] Reports, HOTO and Communication Templates
-- [ ] Projects and Enhancement Portfolio
-- [ ] Full Source and Document Cross-reference Register
+**Authorization:** Full import from `_SENSES SOC` approved by Boss under `DEC-20260829-001`.
 
-> หมายเหตุ: `WK-OBK-SOP-001` เป็น Document Register ระดับ Source Index แล้ว การ Extract เนื้อหาภายในแต่ละ SOP/WI และการยืนยัน Current Revision/Approval Status ยังดำเนินต่อเป็น Phase ถัดไป
+- [x] Source Map / Shared Drive Structure — imported
+- [x] Full SOP and WI Document Register — initial source register imported; content extraction and revision validation continue
+- [x] Swimlane Library — PDF source library imported; Visio/version validation continue
+- [~] Complete Mozart Event Type and Task Template Master — In Progress
+- [~] CCTV Master Knowledge Base and Qognify User Guidelines — Authorized / Import Queue
+- [~] Training and Assessment Library — Authorized / Import Queue
+- [~] Security Awareness Library — Authorized / Import Queue
+- [~] TTX, GDX and AAR Library — Authorized / Import Queue
+- [~] Reports, HOTO and Communication Templates — Authorized / Import Queue
+- [~] Projects and Enhancement Portfolio — Authorized / Import Queue
+- [~] Full Source and Document Cross-reference Register — Authorized / Import Queue
+- [~] SOC Documents / Forms / Guidelines / Manuals — Authorized / Import Queue
+- [~] Operator Task Library — Authorized / Import Queue
+- [~] CCTV Record and Tracking — Authorized; sensitive evidence remains in Drive and Repository stores metadata/sanitized knowledge only
+- [~] Activity Picture Library — Authorized; raw images remain in Drive and Repository stores metadata/reference only
+- [~] SOC Management One Bangkok — Task, Work Schedule, Report, Project, Procurement, Document Control, Project Sun — Authorized / Import Queue
+
+> หมายเหตุ: `_SENSES SOC` Google Drive เป็น Raw Source/Source of Truth ส่วน GitHub Inventory เป็น Knowledge Structure, Register, Cross-reference และ Sanitized Extract. เอกสาร Draft/Historical/Example ต้องรักษาสถานะเดิมและห้ามใช้เสมือน Approved Operational Rule.
