@@ -3,7 +3,7 @@ kb_id: REG-INV-001
 title: "ทะเบียนองค์ความรู้ (Knowledge Inventory Register)"
 description: "ทะเบียนกลางสำหรับตรวจสอบ KB ID, Domain, Owner, Last Updated, Status และ Sensitivity ของทุก Knowledge Item"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-08-29
+last_updated: 2026-09-03
 status: active
 domain: register
 knowledge_type: index
@@ -17,7 +17,7 @@ sensitivity: internal
 |---|---|
 | คำอธิบาย (Description) | ทะเบียนกลางสำหรับตรวจสอบ Metadata และสถานะของทุก Knowledge Item |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 29 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 3 กันยายน 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## รายการ Knowledge Item
@@ -46,18 +46,19 @@ sensitivity: internal
 | WK-OBK-VP-001 | คลัง Virtual Patrol ของ SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-OBK-CCTV-SRC-001 | คลัง Source งาน CCTV ของ SOC | SOC | 2026-08-29 | Active | Restricted |
 | WK-OBK-OPTASK-001 | คลังงานประจำ SOC Operator | SOC | 2026-08-29 | Active | Internal |
+| WK-OBK-LIB-001 | One Bangkok Document Library Inventory | SOC | 2026-09-03 | Active | Internal |
 | WK-BIZ-GF-001 | องค์ความรู้ธุรกิจส่วนตัว | Wanmaka Promchoto | 2026-08-25 | Draft | General Personal |
 | BP-INDEX-001 | ประวัติและบริบทส่วนบุคคลของ Boss | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-CTX-001 | บริบทส่วนบุคคลและกฎการใช้งาน | Wanmaka Promchoto | 2026-08-25 | Active | Sensitive Personal |
 | REG-TERM-001 | ทะเบียนคำศัพท์และคำควบคุม | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
-| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-08-29 | Active | Internal |
+| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-09-03 | Active | Internal |
 | REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-29 | Active | Internal |
 | REG-SRC-001 | ทะเบียนแหล่งข้อมูล _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
 
 ## สถานะการนำเข้า (Import Status)
 
-**Authorization:** Full import from `_SENSES SOC` approved by Boss under `DEC-20260829-001`.
+**Authorization:** Full import from `_SENSES SOC` approved by Boss under `DEC-20260829-001`. Additional One Bangkok document-library root `1HQPhxkEpWY3Y0lNHoXD5k51ewugQ_bpa` authorized by Boss on 3 September 2026 and indexed under `WK-OBK-LIB-001`.
 
 - [x] Canonical `_SENSES SOC` Shared Drive identified — Drive ID `0AJpAwl9n5sLbUk9PVA`; root = `SOC Management` + `SOC Team`
 - [x] Source Map / Shared Drive Structure — `WK-OBK-SRC-001`
@@ -65,6 +66,8 @@ sensitivity: internal
 - [x] Import Control / Safety Boundary — `WK-OBK-IMP-001`
 - [x] Full Source & Document Cross-reference Register — `REG-SRC-001` established; recursive expansion remains a living process
 - [x] SOP/WI Document Register — `WK-OBK-SOP-001`; content extraction/revision validation continues
+- [x] One Bangkok Document Library root inventory — `WK-OBK-LIB-001`; Policy, Manual, SOP, WI, Supporting Documents, External Documents, Safety Awareness, ERP and Incident Report source domains indexed
+- [x] Controlled Document Management Logs indexed — Policy / MAN / SOP / WI / SP / EXT; 1,041 controlled code records/slots detected across the six logs
 - [x] Swimlane Library — `WK-OBK-SWL-001`; current Visio/PDF revision validation continues
 - [x] Task Management Framework — `WK-OBK-TASK-001`
 - [x] Training & Assessment Source Library — `WK-OBK-TRN-001`; deep content extraction continues
@@ -77,7 +80,7 @@ sensitivity: internal
 - [x] Operator Task Source Library — `WK-OBK-OPTASK-001`; CI Traffic, Zone 1, Zone 2, Compound, Summary and CCTV Offline Checklist indexed
 - [~] Complete Mozart Event Type and Task Template Canonical Master — deep row-level extraction/validation in progress
 - [~] CCTV Master Knowledge Base and Qognify/User Guidelines — source library established; function-level extraction continues as controlled sources are located
-- [~] Security Awareness Library — authorized; canonical current-drive source discovery/validation continues
+- [x] Safety Awareness source library from authorized One Bangkok document root — 2025/2026 source items indexed in `WK-OBK-LIB-001`
 - [~] TTX, GDX and AAR Library — authorized; current-drive source discovery/validation continues
 - [~] Reports, HOTO and Communication Templates — authorized; source discovery/validation continues
 - [~] Projects and Enhancement Portfolio — Management Project domains indexed; deep extraction continues
@@ -89,6 +92,6 @@ sensitivity: internal
 
 ## Data Handling Principle
 
-`_SENSES SOC` Google Drive เป็น Raw Source/Source of Truth ส่วน GitHub Inventory เป็น Knowledge Structure, Register, Cross-reference และ Sanitized Extract.
+`_SENSES SOC` Google Drive และ One Bangkok controlled document Drive เป็น Raw Source/Source of Truth ส่วน GitHub Inventory เป็น Knowledge Structure, Register, Cross-reference และ Sanitized Extract.
 
-ข้อมูล Draft/Historical/Example ต้องรักษาสถานะเดิมและห้ามใช้เสมือน Approved Operational Rule. ข้อมูล Restricted เช่น Credential, PII, Blacklist identity, ทะเบียนรถ, CCTV Evidence, Sensitive Layout และ Individual HR/Performance Record จะไม่ถูกทำสำเนา Raw Content ลง Public Repository แต่ยังถือว่าอยู่ในขอบเขต KB ผ่าน Metadata/Reference และการสกัดองค์ความรู้ที่ปลอดภัย.
+ข้อมูล Draft/Historical/Example/Cancelled/Obsolete ต้องรักษาสถานะเดิมและห้ามใช้เสมือน Approved Operational Rule. ข้อมูล Restricted เช่น Credential, PII, Blacklist identity, ทะเบียนรถ, CCTV Evidence, Sensitive Layout, Incident Evidence และ Individual HR/Performance Record จะไม่ถูกทำสำเนา Raw Content ลง Public Repository แต่ยังถือว่าอยู่ในขอบเขต KB ผ่าน Metadata/Reference และการสกัดองค์ความรู้ที่ปลอดภัย.
