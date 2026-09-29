@@ -3,7 +3,7 @@ kb_id: REG-INV-001
 title: "ทะเบียนองค์ความรู้ (Knowledge Inventory Register)"
 description: "ทะเบียนกลางสำหรับตรวจสอบ KB ID, Domain, Owner, Last Updated, Status และ Sensitivity ของทุก Knowledge Item"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-09-03
+last_updated: 2026-09-29
 status: active
 domain: register
 knowledge_type: index
@@ -17,14 +17,14 @@ sensitivity: internal
 |---|---|
 | คำอธิบาย (Description) | ทะเบียนกลางสำหรับตรวจสอบ Metadata และสถานะของทุก Knowledge Item |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 3 กันยายน 2026 |
+| อัปเดตล่าสุด (Last Updated) | 29 กันยายน 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## รายการ Knowledge Item
 
 | KB ID | ชื่อ | Owner | Last Updated | Status | Sensitivity |
 |---|---|---|---|---|---|
-| ROOT-README-001 | คลังองค์ความรู้หลัก | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
+| ROOT-README-001 | คลังองค์ความรู้หลัก | Wanmaka Promchoto | 2026-09-29 | Active | Internal |
 | GOV-AI-001 | ธรรมาภิบาลและกฎการทำงานของ AI | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 | GOV-KB-001 | โครงสร้างองค์ความรู้สำหรับ AI | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
 | WK-INDEX-001 | สารบัญองค์ความรู้ด้านงาน | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
@@ -33,7 +33,7 @@ sensitivity: internal
 | WK-OBK-ZONE-001 | ทะเบียน Seat, Zone และ Asset ของ SOC | SOC | 2026-08-25 | Active—Update Required | Internal |
 | WK-OBK-MOZ-001 | กฎหลักการบริหาร Mozart Case | SOC | 2026-08-25 | Pending Validation | Internal |
 | WK-OBK-SRC-001 | แผนที่แหล่งข้อมูล _SENSES SOC Google Drive | SOC | 2026-08-29 | Active | Internal |
-| WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
+| WK-OBK-SOP-001 | ทะเบียนเอกสาร SOP/WI ของ One Bangkok SOC | SOC | 2026-09-03 | Active | Internal |
 | WK-OBK-SWL-001 | คลัง Swimlane ของ One Bangkok SOC | SOC | 2026-08-28 | Active | Internal |
 | WK-OBK-IMP-001 | ทะเบียนควบคุมการนำเข้า _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
 | WK-OBK-SRCINV-001 | ทะเบียน Source Inventory _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
@@ -52,13 +52,13 @@ sensitivity: internal
 | BP-PRO-001 | ตัวตนและระบบการทำงานระดับมืออาชีพ | Wanmaka Promchoto | 2026-08-25 | Active | General Personal |
 | BP-CTX-001 | บริบทส่วนบุคคลและกฎการใช้งาน | Wanmaka Promchoto | 2026-08-25 | Active | Sensitive Personal |
 | REG-TERM-001 | ทะเบียนคำศัพท์และคำควบคุม | Wanmaka Promchoto | 2026-08-25 | Active | Internal |
-| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-09-03 | Active | Internal |
-| REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-08-29 | Active | Internal |
+| REG-INV-001 | ทะเบียนองค์ความรู้ | Wanmaka Promchoto | 2026-09-29 | Active | Internal |
+| REG-DEC-001 | ทะเบียนการตัดสินใจ | Wanmaka Promchoto | 2026-09-29 | Active | Internal |
 | REG-SRC-001 | ทะเบียนแหล่งข้อมูล _SENSES SOC | SOC | 2026-08-29 | Active | Internal |
 
 ## สถานะการนำเข้า (Import Status)
 
-**Authorization:** Full import from `_SENSES SOC` approved by Boss under `DEC-20260829-001`. Additional One Bangkok document-library root `1HQPhxkEpWY3Y0lNHoXD5k51ewugQ_bpa` authorized by Boss on 3 September 2026 and indexed under `WK-OBK-LIB-001`.
+**Authorization:** Full import from `_SENSES SOC` approved by Boss under `DEC-20260829-001`. Additional One Bangkok document-library root `1HQPhxkEpWY3Y0lNHoXD5k51ewugQ_bpa` authorized by Boss on 3 September 2026 under `DEC-20260903-001` and indexed under `WK-OBK-LIB-001`.
 
 - [x] Canonical `_SENSES SOC` Shared Drive identified — Drive ID `0AJpAwl9n5sLbUk9PVA`; root = `SOC Management` + `SOC Team`
 - [x] Source Map / Shared Drive Structure — `WK-OBK-SRC-001`

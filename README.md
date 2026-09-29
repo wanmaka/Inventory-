@@ -3,10 +3,11 @@ kb_id: ROOT-README-001
 title: "คลังองค์ความรู้หลัก (KB Master Inventory)"
 description: "สารบัญกลางและจุดเริ่มต้นสำหรับเข้าถึงองค์ความรู้ด้านงาน ตัวตน วิธีทำงาน และบริบทส่วนบุคคลของ Wanmaka Promchoto"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-08-25
+last_updated: 2026-09-29
 status: active
 domain: shared_governance
 knowledge_type: index
+source_authority: boss_confirmed
 sensitivity: internal
 language: th-TH
 ---
@@ -17,7 +18,7 @@ language: th-TH
 |---|---|
 | คำอธิบาย (Description) | สารบัญกลางสำหรับเข้าถึงองค์ความรู้ด้านงาน ตัวตน วิธีทำงาน และบริบทส่วนบุคคลของ Boss |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 25 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 29 กันยายน 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## วัตถุประสงค์ (Purpose)

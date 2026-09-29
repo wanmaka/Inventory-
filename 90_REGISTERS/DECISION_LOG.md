@@ -3,7 +3,7 @@ kb_id: REG-DEC-001
 title: "ทะเบียนการตัดสินใจหลัก (Master Decision Log)"
 description: "บันทึก Decision ที่ Boss ยืนยัน พร้อมวันที่ สถานะ และหลักการไม่แก้ไขประวัติย้อนหลังโดยไม่มีร่องรอย"
 owner: "Wanmaka Promchoto"
-last_updated: 2026-08-29
+last_updated: 2026-09-29
 status: active
 domain: register
 knowledge_type: decision_record
@@ -17,7 +17,7 @@ sensitivity: internal
 |---|---|
 | คำอธิบาย (Description) | บันทึก Decision ที่ Boss ยืนยัน พร้อมวันที่และสถานะ |
 | เจ้าของข้อมูล (Owner) | Wanmaka Promchoto |
-| อัปเดตล่าสุด (Last Updated) | 29 สิงหาคม 2026 |
+| อัปเดตล่าสุด (Last Updated) | 29 กันยายน 2026 |
 | สถานะ (Status) | ใช้งานจริง (Active) |
 
 ## Decision ที่ยืนยันเมื่อวันที่ 25 สิงหาคม 2026
@@ -106,6 +106,15 @@ sensitivity: internal
 - Decision: Boss อนุญาตให้นำองค์ความรู้และแหล่งข้อมูลทั้งหมดที่เข้าถึงได้จาก Shared Drive `_SENSES SOC` เข้าสู่ One Bangkok SOC Master Knowledge Base โดยให้ Google Drive เป็น Source of Truth สำหรับ Source Material และให้ Inventory/KB ทำหน้าที่เป็นโครงสร้างความรู้ ทะเบียนอ้างอิง และข้อมูลที่ผ่านการสกัดตามสถานะเอกสาร
 - Control: เอกสาร Approved/Current Revision สามารถใช้เป็น Operational Source ได้ตามอำนาจของเอกสาร; Draft/Historical/Example ต้องรักษาสถานะเดิมและห้ามใช้เสมือน Approved Rule
 - Data Handling: เนื่องจาก Inventory Repository เป็น Public ข้อมูล Restricted, PII, Blacklist/Whitelist identity, ทะเบียนรถ, CCTV Evidence, Credential, รายละเอียดเชิงกายภาพหรือความปลอดภัยที่ไม่ควรเผยแพร่ และข้อมูลบุคคลรายคน ให้บันทึกเฉพาะ Metadata/Reference/Sanitized Knowledge ใน Repository โดยเก็บ Raw Source ไว้ใน `_SENSES SOC` Drive
+
+## Decision ที่ยืนยันเมื่อวันที่ 3 กันยายน 2026
+
+### DEC-20260903-001 — One Bangkok Document Library Root Authorization
+- สถานะ: Approved
+- Decision: Boss อนุญาตให้ index One Bangkok controlled document-library root `1HQPhxkEpWY3Y0lNHoXD5k51ewugQ_bpa` เป็นแหล่งข้อมูลเพิ่มเติมของ One Bangkok SOC Master Knowledge Base ภายใต้ `WK-OBK-LIB-001`
+- Control: ใช้หลักการเดียวกับ `DEC-20260829-001` โดย Drive เป็น Source of Truth และเอกสาร Draft/Historical/Example ต้องรักษาสถานะเดิม
+- Data Handling: ข้อมูล Restricted บันทึกเฉพาะ Metadata/Reference/Sanitized Knowledge ใน Public Repository
+- หมายเหตุการบันทึก: การอนุญาตเกิดขึ้นเมื่อ 3 กันยายน 2026 และบันทึกลงทะเบียนย้อนหลังเมื่อ 29 กันยายน 2026 ตามที่ Boss อนุมัติ
 
 ## กฎการจัดการ Decision (Decision Handling Rule)
 
